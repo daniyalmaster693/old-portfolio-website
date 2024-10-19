@@ -23,6 +23,10 @@
   gap: 725px;
 }
 
+.all-projects {
+  text-decoration: none;
+}
+
 .featured-projects-title {
   color: var(--purple);
   font-size: 2.5rem;
@@ -44,10 +48,6 @@
 
 .featured-projects-top p:hover {
   color: var(--primary-grey);
-}
-
-.right-side {
-  margin-top: 100px;
 }
 
 .project-link {

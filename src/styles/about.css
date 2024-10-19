@@ -1,5 +1,5 @@
 .about-me {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 .about-me,
@@ -87,7 +87,7 @@
   justify-content: start;
   align-items: center;
   grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(6, 200px);
+  grid-template-rows: repeat(2, 200px);
   margin-top: 1.25rem;
 }
 
@@ -110,32 +110,20 @@
 
 .tech-card:nth-child(1) img,
 .tech-card:nth-child(2) img {
-  height: 55px;
-  width: 55px;
+  height: 50px;
+  width: 50px;
 }
 
 .tech-card:nth-child(3) img,
 .tech-card:nth-child(5) img,
 .tech-card:nth-child(6) img {
-  height: 50px;
-  width: 50px;
+  height: 43px;
+  width: 43px;
 }
 
-.tech-card:nth-child(4) img,
-.tech-card:nth-child(7) img,
-.tech-card:nth-child(8) img,
-.tech-card:nth-child(9) img,
-.tech-card:nth-child(10) img,
-.tech-card:nth-child(11) img,
-.tech-card:nth-child(12) img,
-.tech-card:nth-child(13) img,
-.tech-card:nth-child(14) img,
-.tech-card:nth-child(15) img,
-.tech-card:nth-child(16) img,
-.tech-card:nth-child(17) img,
-.tech-card:nth-child(18) img {
-  height: 60px;
-  width: 60px;
+.tech-card:nth-child(4) img {
+  height: 55px;
+  width: 55px;
 }
 
 .tech-card:hover {
