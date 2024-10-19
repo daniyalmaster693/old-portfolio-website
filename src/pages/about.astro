@@ -1,0 +1,292 @@
+---
+import "../styles/global.css";
+import "../styles/about.css";
+import Navigation from "../components/Navigation.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/Logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/Logo.png" />
+    <title>About | Daniyal Master</title>
+  </head>
+  <body>
+    <Navigation />
+
+    <section class="about-me">
+      <h2 class="about-me-title">About Me</h2>
+      <p class="about-me-description">
+        Aliqua tempor nostrud adipisicing commodo fugiat nostrud cupidatat. Duis
+        officia veniam ad eu cillum laboris Lorem minim reprehenderit est velit
+        sit. Nulla commodo nisi exercitation consequat ullamco non eu in.
+      </p>
+
+      <p class="about-me-description">
+        Aliqua tempor nostrud adipisicing commodo fugiat nostrud cupidatat. Duis
+        officia veniam ad eu cillum laborum sint proident laboris Lorem minim
+        reprehenderit i exercitation consequat ullamco non eu in.
+      </p>
+
+      <p class="about-me-description">
+        Aliqua tempor nostrud adipisicing commodo fugiat nostrud cupidatat. la
+        commodo nisi exercitation consequat ullamco non eu in.
+      </p>
+    </section>
+
+    <section class="connect-with-me">
+      <div class="connect-with-me-top">
+        <h2 class="connect-with-me-title">Connect with me</h2>
+        <p class="connect-with-me-description">
+          Reach out using social media or send me an email to get in touch.
+        </p>
+      </div>
+
+      <div class="social-media-links">
+        <div class="github">
+          <a href="https://github.com/daniyalmaster693" target="_blank"> </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#a6a6a6"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-github"
+            ><path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path></svg
+          >
+        </div>
+
+        <div class="codepen">
+          <a href="https://codepen.io/daniyalmaster693" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-codepen"
+            >
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+              ></polygon>
+              <line x1="12" y1="22" x2="12" y2="15.5"></line>
+              <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+              <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+              <line x1="12" y1="2" x2="12" y2="8.5"></line>
+            </svg>
+          </a>
+        </div>
+
+        <div class="linkedin">
+          <a
+            href="https://www.linkedin.com/in/daniyal-master-841925319/"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-linkedin"
+              ><path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path><rect x="2" y="9" width="4" height="12"></rect><circle
+                cx="4"
+                cy="4"
+                r="2"></circle></svg
+            >
+          </a>
+        </div>
+
+        <div class="instagram">
+          <a href="https://www.instagram.com/daniyal.m_/" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#a6a6a6"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-instagram"
+            ><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path
+              d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
+              x1="17.5"
+              y1="6.5"
+              x2="17.51"
+              y2="6.5"></line></svg
+          >
+         </a>
+        </div>
+
+        <div class="email">
+          <a href="mailto:daniyalmaster693@gmail.com" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#a6a6a6"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-mail"
+            ><path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path><polyline points="22,6 12,13 2,6"></polyline></svg
+          >
+        </a>
+        </div>
+      </div>
+
+      <p class="contact-email">daniyalmaster693@gmail.com</p>
+    </section>
+
+    <section class="tech-stack-section">
+      <div class="tech-stack">
+        <h1 class="tech-stack-title">Apps</h1>
+        <p class="tech-stack-description">My most used software</p>
+
+        <div class="apps-container">
+          <div class="tech-card">
+            <img src="/public/html.svg" alt="html icon" />
+            <p class="technology-title">HTML</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/css.svg" alt="css icon" />
+            <p class="technology-title">CSS</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/javascript.svg" alt="javascript icon" />
+            <p class="technology-title">Javascript</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Astro.png" alt="astro icon" />
+            <p class="technology-title">Astro JS</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/git.svg" alt="git icon" />
+            <p class="technology-title">Git</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/npm.svg" alt="npm icon" />
+            <p class="technology-title">NPM</p>
+          </div>
+
+          <div class="tech-card">
+            <img
+              src="/public/Firefox Developer Edition Icon.png"
+              alt="npm icon"
+            />
+            <p class="technology-title">Firefox Dev Ed</p>
+          </div>
+
+          <div class="tech-card">
+            <img
+              src="/public/Visual Studio Code Icon.png"
+              alt="visual studio code icon"
+            />
+            <p class="technology-title">VS Code</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Figma Icon.png" alt="figma icon" />
+            <p class="technology-title">Figma</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Safari Icon.png" alt="safari icon" />
+            <p class="technology-title">Safari</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Calendar Icon.png" alt="calendar icon" />
+            <p class="technology-title">Ical</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Reminders Icon.png" alt="reminders icon" />
+            <p class="technology-title">Reminders</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Todoist Icon.png" alt="todoist icon" />
+            <p class="technology-title">Todoist</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Obsidian Icon.png" alt="obsidian icon" />
+            <p class="technology-title">Obsidian</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Raindrop Icon.png" alt="raindrop icon" />
+            <p class="technology-title">Raindrop</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Raycast Icon.png" alt="raycast icon" />
+            <p class="technology-title">Raycast</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Spotify Icon.png" alt="spotify icon" />
+            <p class="technology-title">Spotify</p>
+          </div>
+
+          <div class="tech-card">
+            <img src="/public/Omnisets.png" alt="omnisets icon" />
+            <p class="technology-title">Omnisets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<footer class="footer">
+  <hr class="hr" />
+  <p class="copyrights">© 2024 • Daniyal Master. All Rights Reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-in");
+  });
+
+  function handlePageTransition(event) {
+    event.preventDefault();
+
+    document.body.classList.remove("fade-in");
+    document.body.classList.add("fade-out");
+    window.location.href = event.target.href;
+  }
+
+  document.querySelectorAll(".navlink").forEach((link) => {
+    link.addEventListener("click", handlePageTransition);
+  });
+</script>

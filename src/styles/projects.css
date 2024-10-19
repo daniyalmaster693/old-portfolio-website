@@ -1,0 +1,116 @@
+.featured-projects-section {
+  width: 100%;
+  margin-top: 90px;
+  animation: var(--fadeIn);
+}
+
+.featured-projects {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(2, 500px);
+  margin-top: 50px;
+}
+
+.featured-projects-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-projects-top {
+  gap: 725px;
+}
+
+.featured-projects-title {
+  color: var(--purple);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: -25px;
+}
+
+.featured-projects-top p {
+  color: var(--secondary-grey);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.023px;
+  line-height: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
+.featured-projects-top p:hover {
+  color: var(--primary-grey);
+}
+
+.right-side {
+  margin-top: 100px;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 575px;
+  height: 475px;
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
+.project:hover {
+  transform: var(--scale-in-out);
+}
+
+.project-image img {
+  height: 325px;
+  width: 575px;
+  border-radius: var(--border-radius);
+}
+
+.project-content {
+  width: 575px;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  text-align: left;
+}
+
+.project-title {
+  color: var(--primary-grey);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 1.875rem;
+}
+
+.project-description {
+  color: var(--secondary-grey);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 0.023rem;
+  margin-top: 0.5rem;
+}
+
+.learn-more {
+  text-align: right;
+  width: 570px;
+  margin-top: -55px;
+}
+
+.arrow {
+  color: var(--secondary-grey);
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
+.arrow:hover {
+  color: var(--primary-grey);
+}

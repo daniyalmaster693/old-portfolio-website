@@ -1,0 +1,163 @@
+<header class="header">
+  <div class="home-link">
+    <li class="logo">
+      <a class="navlink" href="/"> Daniyal Master.</a>
+    </li>
+  </div>
+
+  <div class="links">
+    <ul class="header-links">
+      <li class="navitem">
+        <a class="navlink" href="projects"> Projects </a>
+      </li>
+
+      <li class="navitem">
+        <a class="navlink" href="blogs"> Blogs </a>
+      </li>
+
+      <li class="navitem">
+        <a class="navlink" href="about"> About </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<style>
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-black);
+    gap: 31.25rem;
+    margin-top: 0.7rem;
+    width: 100%;
+    height: 65px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    animation: var(--fadeIn);
+  }
+
+  .logo-link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  .navitem,
+  .logo {
+    line-height: 1.5rem;
+    list-style-type: none;
+    animation: var(--fadeIn);
+    transition: var(--ease-in-out);
+  }
+
+  .navitem a:link,
+  .logo a:link {
+    position: relative;
+    text-decoration: none;
+    transition: var(--ease-in-out);
+  }
+
+  /* Logos */
+
+  .logo {
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+
+  .logo a:link {
+    color: var(--purple);
+  }
+
+  .logo a:visited {
+    color: var(--purple);
+  }
+
+  .logo a:link:hover {
+    color: var(--white);
+  }
+
+  .logo a:visited:hover {
+    color: var(--white);
+  }
+
+  /* Nav Items */
+
+  .navitem {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .navitem a:link {
+    color: var(--white);
+  }
+
+  .navitem a:visited {
+    color: var(--white);
+  }
+
+  .navitem a:link:hover {
+    color: var(--purple);
+  }
+
+  .navitem a:visited:hover {
+    color: var(--purple);
+  }
+
+  /* Current Navitems */
+
+  .current-navitem {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .current-navitem a:link {
+    color: var(--purple);
+  }
+
+  .current-navitem a:visited {
+    color: var(--purple);
+  }
+
+  .current-navitem a:link:hover {
+    color: var(--white);
+  }
+
+  .current-navitem a:visited:hover {
+    color: var(--white);
+  }
+
+
+@media screen and (max-width: 935px) {
+  .header {
+    gap: 20rem;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .header {
+    gap: 12rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    gap: 7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    gap: 3rem;
+  }
+}
+
+</style>
