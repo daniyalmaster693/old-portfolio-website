@@ -44,39 +44,6 @@
   width: 575px;
 }
 
-.social-media-links {
-  display: flex;
-  align-items: center;
-  gap: 0.9375rem;
-  margin-top: 2.75em;
-  width: 575px;
-}
-
-.github svg,
-.codepen svg,
-.linkedin svg,
-.instagram svg,
-.email svg {
-  cursor: pointer;
-  transition: var(--ease-in-out);
-}
-
-.github svg:hover,
-.codepen svg:hover,
-.linkedin svg:hover,
-.instagram svg:hover,
-.email svg:hover {
-  stroke: var(--purple);
-}
-
-.contact-email {
-  color: var(--secondary-grey);
-  font-size: 0.9375rem;
-  font-weight: 400;
-  width: 575px;
-  margin-top: 0.75rem;
-}
-
 .tech-stack-section {
   width: 100%;
   margin-top: 50px;
@@ -137,6 +104,52 @@
   font-weight: 500;
   line-height: 1.5em;
   margin-top: 1.875rem;
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  margin: 2.75em 0 1.25em 0;
+  width: 575px;
+}
+
+.github svg,
+.codepen svg,
+.linkedin svg,
+.instagram svg,
+.email svg {
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
+.github svg:hover,
+.codepen svg:hover,
+.linkedin svg:hover,
+.instagram svg:hover,
+.email svg:hover {
+  stroke: var(--purple);
+}
+
+.contact-email,
+.resume {
+  color: var(--secondary-grey);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  width: 575px;
+  margin-top: 0.75rem;
+}
+
+.resume {
+  transition: var(--ease-in-out);
+}
+
+.resume:hover {
+  color: var(--primary-grey);
+}
+
+.resume-link {
+  text-decoration: none;
 }
 
 .footer {
