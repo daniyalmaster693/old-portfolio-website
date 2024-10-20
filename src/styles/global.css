@@ -10,7 +10,8 @@
   --border-color: #202123;
   --border-hover-color: #2c2d2e;
   --hr: 1px solid #27272a;
-  --fadeIn: fadeIn 1.17s forwards ease-out;
+  --fadeInDuration: 1.75s;
+  --fadeOutDuration: 1.5s;
   --ease-in-out: all 0.3s ease-in-out;
   --scale-in-out: scale(1.01);
 }
@@ -35,6 +36,18 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 0.25;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 0.75;
     transform: translateY(3px);
   }
   to {
@@ -43,18 +56,37 @@
   }
 }
 
-body.fade-out {
-  opacity: 0;
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.75;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 0.25;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 
-body.fade-in {
-  opacity: 1;
+body.fade-out {
+  animation: fadeOut var(--fadeOutDuration) forwards;
 }
 
 body {
   min-height: 100vh;
   font-family: var(--Sf-Pro);
   background-color: var(--primary-black);
-  transition: opacity 0.4s ease-in-out;
-  animation: var(--fadeIn);
+  opacity: 0;
+  animation: fadeIn var(--fadeInDuration) forwards;
 }
