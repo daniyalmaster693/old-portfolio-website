@@ -47,6 +47,10 @@
   }
 }
 
+body.fade-out {
+  opacity: 0;
+}
+
 body {
   min-height: 100vh;
   font-family: var(--Sf-Pro);
