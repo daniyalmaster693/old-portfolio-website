@@ -69,7 +69,7 @@
   align-items: center;
   height: 150px;
   width: 175px;
-  cursor: pointer;
+  cursor: default;
   outline: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   transition: var(--ease-in-out);
