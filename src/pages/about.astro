@@ -201,27 +201,27 @@ import Navigation from "../components/Navigation.astro";
       <p class="contact-email">daniyalmaster693@gmail.com</p>
     </section>
   </body>
+
+  <footer class="footer">
+    <hr class="hr" />
+    <p class="copyrights">© 2024 • Daniyal Master. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("fade-in");
+    });
+
+    function handlePageTransition(event) {
+      event.preventDefault();
+
+      document.body.classList.remove("fade-in");
+      document.body.classList.add("fade-out");
+      window.location.href = event.target.href;
+    }
+
+    document.querySelectorAll(".navlink").forEach((link) => {
+      link.addEventListener("click", handlePageTransition);
+    });
+  </script>
 </html>
-
-<footer class="footer">
-  <hr class="hr" />
-  <p class="copyrights">© 2024 • Daniyal Master. All Rights Reserved.</p>
-</footer>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("fade-in");
-  });
-
-  function handlePageTransition(event) {
-    event.preventDefault();
-
-    document.body.classList.remove("fade-in");
-    document.body.classList.add("fade-out");
-    window.location.href = event.target.href;
-  }
-
-  document.querySelectorAll(".navlink").forEach((link) => {
-    link.addEventListener("click", handlePageTransition);
-  });
-</script>
