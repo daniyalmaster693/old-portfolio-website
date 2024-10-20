@@ -24,7 +24,7 @@
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
-  width: 575px;
+  width: 600px;
 }
 
 .connect-with-me-title,
@@ -41,7 +41,7 @@
   line-height: 1.6em;
   letter-spacing: 0.023rem;
   margin-top: 1.5rem;
-  width: 575px;
+  width: 600px;
 }
 
 .tech-stack-section {
@@ -59,7 +59,7 @@
 }
 
 .tech-stack {
-  width: 575px;
+  width: 600px;
 }
 
 .tech-card {
@@ -111,7 +111,7 @@
   align-items: center;
   gap: 0.9375rem;
   margin: 2.75em 0 1.25em 0;
-  width: 575px;
+  width: 600px;
 }
 
 .github svg,
@@ -136,7 +136,7 @@
   color: var(--secondary-grey);
   font-size: 0.9375rem;
   font-weight: 400;
-  width: 575px;
+  width: 600px;
   margin-top: 0.75rem;
 }
 
@@ -164,7 +164,7 @@
 }
 
 .hr {
-  width: 25%;
+  width: 23rem;
   border: 1px solid var(--secondary-grey);
 }
 
