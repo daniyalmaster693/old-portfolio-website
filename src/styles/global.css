@@ -11,7 +11,6 @@
   --border-hover-color: #2c2d2e;
   --hr: 1px solid #27272a;
   --fadeInDuration: 1.25s;
-  --fadeOutDuration: 1s;
   --ease-in-out: all 0.3s ease-in-out;
   --scale-in-out: scale(1.01);
 }
@@ -46,25 +45,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0.5;
-    transform: translateY(5px);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-}
-
-body.fade-out {
-  animation: fadeOut var(--fadeOutDuration) forwards;
 }
 
 body {
