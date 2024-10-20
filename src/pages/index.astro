@@ -138,12 +138,15 @@ import Footer from "../components/Footer.astro";
       document.body.classList.add("fade-in");
 
       const typed = new Typed(".typed-message", {
-        strings: ["Hi, I'm Daniyal.", "^1000 Assalamualaikum"],
+        strings: ["Hi, I'm Daniyal."],
         typeSpeed: 60,
         backSpeed: 60,
         backDelay: 1100,
-        loop: true,
-        loopCount: Infinity,
+        loop: false,
+        loopCount: 1,
+        onComplete: (self) => {
+          self.cursor.style.display = "none";
+        },
       });
     });
 
