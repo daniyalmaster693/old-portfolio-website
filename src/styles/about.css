@@ -3,7 +3,6 @@
 }
 
 .about-me,
-.connect-with-me,
 .tech-stack-section {
   display: flex;
   flex-direction: column;
@@ -12,13 +11,11 @@
   animation: var(--fadeIn);
 }
 
-.connect-with-me,
 .tech-stack-section {
   margin-top: 2.5em;
 }
 
 .about-me-title,
-.connect-with-me-title,
 .tech-stack-title {
   color: var(--purple);
   font-size: 2rem;
@@ -27,13 +24,11 @@
   width: 600px;
 }
 
-.connect-with-me-title,
 .tech-stack-title {
   margin-top: 50px;
 }
 
 .about-me-description,
-.connect-with-me-description,
 .tech-stack-description {
   color: var(--secondary-grey);
   font-size: 1rem;
@@ -104,52 +99,6 @@
   font-weight: 500;
   line-height: 1.5em;
   margin-top: 1.875rem;
-}
-
-.social-media-links {
-  display: flex;
-  align-items: center;
-  gap: 0.9375rem;
-  margin: 2.75em 0 1.25em 0;
-  width: 600px;
-}
-
-.github svg,
-.codepen svg,
-.linkedin svg,
-.instagram svg,
-.email svg {
-  cursor: pointer;
-  transition: var(--ease-in-out);
-}
-
-.github svg:hover,
-.codepen svg:hover,
-.linkedin svg:hover,
-.instagram svg:hover,
-.email svg:hover {
-  stroke: var(--purple);
-}
-
-.contact-email,
-.resume {
-  color: var(--secondary-grey);
-  font-size: 0.9375rem;
-  font-weight: 400;
-  width: 600px;
-  margin-top: 0.75rem;
-}
-
-.resume {
-  transition: var(--ease-in-out);
-}
-
-.resume:hover {
-  color: var(--primary-grey);
-}
-
-.resume-link {
-  text-decoration: none;
 }
 
 .footer {

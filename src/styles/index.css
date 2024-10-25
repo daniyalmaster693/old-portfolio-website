@@ -1,6 +1,5 @@
 body {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 .hero-section {
@@ -52,13 +51,223 @@ body {
   text-align: center;
 }
 
+.featured-projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 125px;
+  overflow: hidden;
+  animation: var(--fadeIn);
+}
+
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 90px;
+  width: 655px;
+  gap: 10px;
+}
+
+.featured-projects-top {
+  width: 600px;
+}
+
+.all-projects,
+.all-posts {
+  text-decoration: none;
+}
+
+.featured-projects-title {
+  color: var(--purple);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.featured-projects-top p,
+.blog-section-top p {
+  color: var(--secondary-grey);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.023px;
+  text-align: left;
+  margin-top: 1.25rem;
+  transition: var(--ease-in-out);
+}
+
+.featured-projects-top p:hover,
+.blog-section-top p:hover {
+  color: var(--primary-grey);
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 600px;
+  height: 85px;
+  padding: 0 1.75em 0 1.75em;
+  gap: 30px;
+  border-radius: 1rem;
+  transition: var(--ease-in-out);
+}
+
+.project:hover {
+  background-color: var(--hover-black);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-title {
+  color: var(--primary-grey);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+}
+
+.project-description {
+  color: var(--secondary-grey);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.023rem;
+}
+
+.learn-more {
+  text-align: right;
+}
+
+.arrow {
+  color: var(--secondary-grey);
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
+.arrow:hover {
+  color: var(--primary-grey);
+}
+
+.project-hr {
+  width: 37em;
+  border: var(--hr);
+}
+
+.blog-posts-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 125px 0px 65px 0px;
+  overflow: hidden;
+  animation: var(--fadeIn);
+}
+
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 90px;
+  width: 655px;
+  gap: 10px;
+}
+
+.blog-section-top {
+  width: 600px;
+}
+
+.blog-section-title {
+  color: var(--purple);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 600px;
+  height: 85px;
+  padding: 0 1.75em 0 1.75em;
+  gap: 30px;
+  border-radius: 1rem;
+  transition: var(--ease-in-out);
+}
+
+.post:hover {
+  background-color: var(--hover-black);
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-title {
+  color: var(--primary-grey);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+}
+
+.published {
+  color: var(--secondary-grey);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.023rem;
+}
+
+.read-more {
+  text-align: right;
+}
+
+.arrow {
+  color: var(--secondary-grey);
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
+.arrow:hover {
+  color: var(--primary-grey);
+}
+
+.blog-hr {
+  width: 37em;
+  border: var(--hr);
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 20px;
+  bottom: -200px;
   left: 0;
   right: 0;
 }
@@ -66,30 +275,6 @@ body {
 .hr {
   width: 23rem;
   border: 1px solid var(--secondary-grey);
-  margin-top: 0px;
-}
-
-.social-media-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.9375rem;
-  margin-top: 1.25em;
-}
-
-.github svg,
-.codepen svg,
-.linkedin svg,
-.email svg {
-  cursor: pointer;
-  transition: var(--ease-in-out);
-}
-
-.github svg:hover,
-.codepen svg:hover,
-.linkedin svg:hover,
-.email svg:hover {
-  stroke: var(--purple);
 }
 
 .copyrights {
@@ -97,7 +282,7 @@ body {
   font-size: 0.8125rem;
   font-weight: 500;
   animation: var(--fadeIn);
-  margin-top: 12px;
+  margin-top: 1.25em;
   margin-bottom: 20px;
 }
 
