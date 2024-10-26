@@ -2,6 +2,12 @@ body {
   min-height: 100vh;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  .here-title {
+    font-weight: 599;
+  }
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
