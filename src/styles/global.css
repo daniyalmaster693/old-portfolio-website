@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: SF-Pro;
-  font-display: optional;
+  font-display: swap;
   src: url(SF-Pro.ttf) format("truetype");
 }
 
