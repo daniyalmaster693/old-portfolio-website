@@ -29,6 +29,7 @@
 
 @font-face {
   font-family: SF-Pro;
+  font-display: fallback;
   src: url(SF-Pro.ttf) format("truetype");
 }
 
