@@ -70,11 +70,6 @@
   transition: var(--ease-in-out);
 }
 
-.tech-card:nth-child(4) img {
-  height: 55px;
-  width: 55px;
-}
-
 .tech-card:hover {
   outline: 1px solid var(--border-hover-color);
   background-color: var(--hover-black);
