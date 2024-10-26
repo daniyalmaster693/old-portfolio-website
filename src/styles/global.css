@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: SF-Pro;
-  src: url(/public/SF-Pro.ttf);
+  src: url(SF-Pro.ttf);
 }
 
 @keyframes fadeIn {
