@@ -176,6 +176,17 @@ import Connect from "../components/Connect.astro";
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("fade-in");
+
+      window.onerror = function (message, source, lineno, colno, error) {
+        console.error("Error message:", message);
+        console.error("Source:", source);
+        console.error("Line:", lineno, "Column:", colno);
+        console.error("Error object:", error);
+      };
+
+      window.addEventListener("unhandledrejection", function (event) {
+        console.error("Unhandled rejection:", event.reason);
+      });
     });
 
     function handlePageTransition(event) {
