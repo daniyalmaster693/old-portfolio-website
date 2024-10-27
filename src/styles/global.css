@@ -1,5 +1,7 @@
 :root {
-  --Sf-Pro: SF-Pro, Arial, Helvetica, sans-serif;
+  --Sf-Pro-Regular: SF-Pro-Regular, Arial, Helvetica, sans-serif;
+  --Sf-Pro-Semi-Bold: SF-Pro-Semi-Bold, Arial, Helvetica, sans-serif;
+  --Sf-Pro-Bold: SF-Pro-Bold, Arial, Helvetica, sans-serif;
   --white: #fff;
   --purple: #a88bfa;
   --primary-black: #050505;
@@ -28,8 +30,21 @@
 }
 
 @font-face {
-  font-family: SF-Pro;
+  font-family: SF-Pro-Regular;
   src: url(SF-Pro.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SF-Pro-Semi-Bold;
+  src: url(SF-Pro.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: SF-Pro-Bold;
+  src: url(SF-Pro.ttf) format("truetype");
+  font-weight: 700;
 }
 
 @keyframes fadeIn {

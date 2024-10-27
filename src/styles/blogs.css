@@ -26,14 +26,14 @@
 .blog-section-title {
   color: var(--purple);
   font-size: 2.5rem;
-  font-weight: 700;
+  font-family: var(--Sf-Pro-Bold);
   text-align: left;
 }
 
 .blog-section-description {
   color: var(--secondary-grey);
   font-size: 16px;
-  font-weight: 400;
+  font-family: var(--Sf-Pro-Regular);
   line-height: 1rem;
   letter-spacing: 0.023px;
   text-align: left;
@@ -70,7 +70,7 @@
 .post-title {
   color: var(--primary-grey);
   font-size: 1.1rem;
-  font-weight: 400;
+  font-family: var(--Sf-Pro-Regular);
   line-height: 1.5em;
   margin-top: 0.75em;
 }
@@ -78,7 +78,7 @@
 .published {
   color: var(--secondary-grey);
   font-size: 0.95rem;
-  font-weight: 400;
+  font-family: var(--Sf-Pro-Regular);
   line-height: 1.5em;
   letter-spacing: 0.023rem;
 }
@@ -89,6 +89,7 @@
 
 .arrow {
   color: var(--secondary-grey);
+  font-family: var(--Sf-Pro-Regular);
   cursor: pointer;
   transition: var(--ease-in-out);
 }
