@@ -1,11 +1,15 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .featured-projects-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 90px;
-  overflow: hidden;
+  margin-top: 150px;
   animation: var(--fadeIn);
 }
 
@@ -37,7 +41,7 @@
 .featured-projects-top p {
   color: var(--secondary-grey);
   font-size: 16px;
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   line-height: 1rem;
   letter-spacing: 0.023px;
   text-align: left;
@@ -79,14 +83,14 @@
 .project-title {
   color: var(--primary-grey);
   font-size: 1.1rem;
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   line-height: 1.5em;
 }
 
 .project-description {
   color: var(--secondary-grey);
   font-size: 0.95rem;
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   line-height: 1.5em;
   letter-spacing: 0.023rem;
 }
@@ -97,7 +101,7 @@
 
 .arrow {
   color: var(--secondary-grey);
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   cursor: pointer;
   transition: var(--ease-in-out);
 }
@@ -109,4 +113,84 @@
 .project-hr {
   width: 37em;
   border: var(--hr);
+}
+
+.dock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  width: 175px;
+  padding: 15px 30px 15px 30px;
+  margin-top: 280px;
+  border-radius: var(--border-radius);
+  background-color: #36393c55;
+  outline: 1px solid #343434;
+  backdrop-filter: blur(10px);
+}
+
+.tooltip-text-1,
+.tooltip-text-2,
+.tooltip-text-3 {
+  position: absolute;
+  top: -40px;
+  width: 85px;
+  z-index: 2;
+  color: var(--secondary-grey);
+  font-family: var(--Inter);
+  font-size: 14px;
+  text-align: center;
+  background-color: #36393c55;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.4375rem;
+  padding: 7px 10px 7px 10px;
+}
+
+.tooltip-text-1 {
+  left: 0;
+}
+
+.tooltip-text-2 {
+  left: 25%;
+}
+
+.tooltip-text-3 {
+  right: 0;
+}
+
+#fade {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.home-button:hover #fade,
+.today-button:hover #fade,
+.completed-button:hover #fade,
+.projects-button:hover #fade {
+  opacity: 1;
+}
+
+.home-button,
+.today-button,
+.completed-button,
+.projects-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.home-button img,
+.today-button img,
+.completed-button img,
+.projects-button img {
+  height: 22px;
+  width: 22px;
 }

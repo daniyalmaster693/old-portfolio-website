@@ -1,10 +1,17 @@
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog-posts-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 150px;
   overflow: hidden;
   animation: var(--fadeIn);
 }
@@ -33,7 +40,7 @@
 .blog-section-description {
   color: var(--secondary-grey);
   font-size: 16px;
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   line-height: 1rem;
   letter-spacing: 0.023px;
   text-align: left;
@@ -70,14 +77,14 @@
 .post-title {
   color: var(--primary-grey);
   font-size: 1.1rem;
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   line-height: 1.5em;
 }
 
 .published {
   color: var(--secondary-grey);
   font-size: 0.95rem;
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   line-height: 1.5em;
   letter-spacing: 0.023rem;
 }
@@ -88,7 +95,7 @@
 
 .arrow {
   color: var(--secondary-grey);
-  font-family: var(--Sf-Pro-Regular);
+  font-family: var(--Inter);
   cursor: pointer;
   transition: var(--ease-in-out);
 }

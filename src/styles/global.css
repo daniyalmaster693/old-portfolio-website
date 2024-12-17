@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
 :root {
-  --Sf-Pro-Regular: SF-Pro-Regular, Arial, Helvetica, sans-serif;
-  --Sf-Pro-Semi-Bold: SF-Pro-Semi-Bold, Arial, Helvetica, sans-serif;
+  --Inter: "Inter", Arial, Helvetica, sans-serif;
   --Sf-Pro-Bold: SF-Pro-Bold, Arial, Helvetica, sans-serif;
   --white: #fff;
   --purple: #a88bfa;
@@ -8,6 +9,9 @@
   --hover-black: rgba(36, 36, 36, 0.75);
   --primary-grey: #e0e0e0;
   --secondary-grey: #a6a6a6;
+  --text-weight: 400;
+  --headings-weight: 500;
+  --title-weight: 700;
   --border-radius: 1.2rem;
   --border-color: #202123;
   --border-hover-color: #2c2d2e;
@@ -27,18 +31,6 @@
   margin: 0;
   padding: 0;
   font: inherit;
-}
-
-@font-face {
-  font-family: SF-Pro-Regular;
-  src: url(SF-Pro.ttf) format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: SF-Pro-Semi-Bold;
-  src: url(SF-Pro.ttf) format("truetype");
-  font-weight: 500;
 }
 
 @font-face {

@@ -1,117 +1,103 @@
-<header class="header">
-  <div class="home-link">
-    <ul>
-      <li class="logo">
-        <a class="navlink" href="/"> Daniyal Master.</a>
-      </li>
-    </ul>
-  </div>
+<section class="dock">
+  <button class="home-button">
+    <a href="/">
+      <span class="tooltip-text-1" id="fade">Home</span>
+      <img src="home.svg" alt="home icon" />
+    </a>
+  </button>
 
-  <div class="links">
-    <ul class="header-links">
-      <li class="navitem">
-        <a class="navlink" href="projects"> Projects </a>
-      </li>
+  <button class="today-button">
+    <a href="projects">
+      <span class="tooltip-text-2" id="fade">Projects</span>
+      <img src="briefcase.svg" alt="briefcase icon" />
+    </a>
+  </button>
 
-      <li class="navitem">
-        <a class="navlink" href="blogs"> Blogs </a>
-      </li>
-
-      <li class="navitem">
-        <a class="navlink" href="Resume.pdf" target="_blank"> Resume </a>
-      </li>
-
-      <li class="navitem">
-        <a class="navlink" href="about"> About </a>
-      </li>
-    </ul>
-  </div>
-</header>
+  <button class="completed-button">
+    <a href="blogs">
+      <span class="tooltip-text-3" id="fade">Blogs</span>
+      <img src="edit-3.svg" alt="pencil writing icon" />
+    </a>
+  </button>
+</section>
 
 <style>
-  .header {
+  .dock {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-black);
-    gap: 31.25rem;
-    margin-top: 0.7rem;
-    width: 100%;
-    height: 65px;
+    gap: 20px;
+    height: 50px;
+    width: 175px;
+    padding: 15px 30px 15px 30px;
+    margin-bottom: -25px;
+    border-radius: var(--border-radius);
+    background-color: #36393c55;
+    backdrop-filter: blur(10px);
+    outline: 1px solid #343434;
     position: sticky;
+    bottom: 15px;
     z-index: 999;
-    top: 0;
+    left: 0;
+    right: 0;
   }
 
-  .logo-link {
-    text-decoration: none;
+  .tooltip-text-1,
+  .tooltip-text-2,
+  .tooltip-text-3 {
+    position: absolute;
+    top: -40px;
+    width: 85px;
+    z-index: 2;
+    color: var(--secondary-grey);
+    font-family: var(--Inter);
+    font-size: 14px;
+    text-align: center;
+    background-color: #36393c55;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0.4375rem;
+    padding: 7px 10px 7px 10px;
+  }
+
+  .tooltip-text-1 {
+    left: 0;
+  }
+
+  .tooltip-text-2 {
+    left: 25%;
+  }
+
+  .tooltip-text-3 {
+    right: 0;
+  }
+
+  #fade {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .home-button:hover #fade,
+  .today-button:hover #fade,
+  .completed-button:hover #fade,
+  .projects-button:hover #fade {
+    opacity: 1;
+  }
+
+  .home-button,
+  .today-button,
+  .completed-button,
+  .projects-button {
+    background-color: transparent;
+    border: none;
     cursor: pointer;
   }
 
-  .header-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.875rem;
-  }
-
-  .navitem,
-  .logo {
-    line-height: 1.5rem;
-    list-style-type: none;
-    transition: var(--ease-in-out);
-  }
-
-  .navitem a:link,
-  .logo a:link {
-    position: relative;
-    text-decoration: none;
-    transition: var(--ease-in-out);
-  }
-
-  /* Logos */
-
-  .logo {
-    font-size: 1.35rem;
-    font-family: var(--Sf-Pro-Bold);
-  }
-
-  .logo a:link {
-    color: var(--purple);
-  }
-
-  .logo a:visited {
-    color: var(--purple);
-  }
-
-  .logo a:link:hover {
-    color: var(--white);
-  }
-
-  .logo a:visited:hover {
-    color: var(--white);
-  }
-
-  /* Nav Items */
-
-  .navitem {
-    font-size: 1rem;
-    font-family: var(--Sf-Pro-Semi-Bold);
-  }
-
-  .navitem a:link {
-    color: var(--white);
-  }
-
-  .navitem a:visited {
-    color: var(--white);
-  }
-
-  .navitem a:link:hover {
-    color: var(--purple);
-  }
-
-  .navitem a:visited:hover {
-    color: var(--purple);
+  .home-button img,
+  .today-button img,
+  .completed-button img,
+  .projects-button img {
+    height: 22px;
+    width: 22px;
   }
 </style>

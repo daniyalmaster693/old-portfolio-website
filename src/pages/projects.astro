@@ -1,8 +1,6 @@
 ---
 import "../styles/global.css";
 import "../styles/projects.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -18,8 +16,6 @@ import Footer from "../components/Footer.astro";
     <title>Projects | Daniyal Master</title>
   </head>
   <body>
-    <Navigation />
-
     <div class="featured-projects-section">
       <div class="featured-projects-top">
         <h1 class="featured-projects-title">Featured Projects</h1>
@@ -81,43 +77,32 @@ import Footer from "../components/Footer.astro";
             </div>
           </div>
         </a>
-
-        <hr class="project-hr" />
-
-        <a class="project-link" href="/">
-          <div class="project">
-            <div class="project-content">
-              <p class="project-title">Tic Tac Toe</p>
-              <p class="project-description">
-                Dolor irure voluptate est consectetur eiusmod cupidatat.
-              </p>
-            </div>
-
-            <div class="learn-more">
-              <p class="arrow">↗︎</p>
-            </div>
-          </div>
-        </a>
-
-        <hr class="project-hr" />
-
-        <a class="project-link" href="/">
-          <div class="project">
-            <div class="project-content">
-              <p class="project-title">Library App</p>
-              <p class="project-description">
-                Dolor irure voluptate est consectetur eiusmod cupidatat.
-              </p>
-            </div>
-
-            <div class="learn-more">
-              <p class="arrow">↗︎</p>
-            </div>
-          </div>
-        </a>
       </div>
     </div>
 
-    <Footer />
+    <div class="dock-container">
+      <section class="dock">
+        <button class="home-button">
+          <a href="/">
+            <span class="tooltip-text-1" id="fade">Home</span>
+            <img src="home.svg" alt="home icon" />
+          </a>
+        </button>
+
+        <button class="today-button">
+          <a href="projects">
+            <span class="tooltip-text-2" id="fade">Projects</span>
+            <img src="briefcase.svg" alt="briefcase icon" />
+          </a>
+        </button>
+
+        <button class="completed-button">
+          <a href="blogs">
+            <span class="tooltip-text-3" id="fade">Blogs</span>
+            <img src="edit-3.svg" alt="pencil writing icon" />
+          </a>
+        </button>
+      </section>
+    </div>
   </body>
 </html>
