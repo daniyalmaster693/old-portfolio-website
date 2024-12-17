@@ -134,6 +134,7 @@ body {
   background-color: #36393c55;
   outline: 1px solid #343434;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .tooltip-text-1,
