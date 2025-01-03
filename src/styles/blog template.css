@@ -45,6 +45,13 @@
   text-decoration: none;
 }
 
+.arrow {
+  color: var(--secondary-grey);
+  font-family: var(--Sf-Pro-Bold);
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
 .blog-top p,
 .post-information p {
   color: var(--secondary-grey);

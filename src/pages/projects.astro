@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/projects.css";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -77,32 +78,26 @@ import "../styles/projects.css";
             </div>
           </div>
         </a>
+
+        <hr class="project-hr" />
+
+        <a class="project-link" href="/">
+          <div class="project">
+            <div class="project-content">
+              <p class="project-title">Weather App</p>
+              <p class="project-description">
+                Dolor irure voluptate est consectetur eiusmod cupidatat.
+              </p>
+            </div>
+
+            <div class="learn-more">
+              <p class="arrow">↗︎</p>
+            </div>
+          </div>
+        </a>
       </div>
-    </div>
 
-    <div class="dock-container">
-      <section class="dock">
-        <button class="home-button">
-          <a href="/">
-            <span class="tooltip-text-1" id="fade">Home</span>
-            <img src="home.svg" alt="home icon" />
-          </a>
-        </button>
-
-        <button class="today-button">
-          <a href="projects">
-            <span class="tooltip-text-2" id="fade">Projects</span>
-            <img src="briefcase.svg" alt="briefcase icon" />
-          </a>
-        </button>
-
-        <button class="completed-button">
-          <a href="blogs">
-            <span class="tooltip-text-3" id="fade">Blogs</span>
-            <img src="edit-3.svg" alt="pencil writing icon" />
-          </a>
-        </button>
-      </section>
+      <Navigation />
     </div>
   </body>
 </html>
