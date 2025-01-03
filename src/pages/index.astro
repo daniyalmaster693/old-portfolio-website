@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/index.css";
+import ShootingStars from "../components/Shooting Stars.astro";
 import Navigation from "../components/Navigation.astro";
 import Connect from "../components/Connect.astro";
 ---
@@ -24,13 +25,13 @@ import Connect from "../components/Connect.astro";
     <div class="maincontainer">
       <section class="hero-section">
         <div class="hero-background">
-          <div class="container"></div>
+          <ShootingStars />
         </div>
 
         <div class="hero-content">
           <h1 class="hero-title">Hi, I'm Daniyal.</h1>
           <p class="hero-description">
-            I'm a student, web developer, and apsiring full stack developer.
+            I'm a student, web developer, and aspiring full stack developer.
             This is my space where I share projects and thoughts.
           </p>
         </div>
@@ -44,7 +45,7 @@ import Connect from "../components/Connect.astro";
             href="https://github.com/daniyalmaster693?tab=repositories"
             target="_blank"
           >
-            <p>View all projects ↗︎</p>
+            <p>View all projects <span class="arrow">↗︎</span></p>
           </a>
         </div>
 
@@ -52,10 +53,8 @@ import Connect from "../components/Connect.astro";
           <a class="project-link" href="/">
             <div class="project">
               <div class="project-content">
-                <p class="project-title">Sports Sync</p>
-                <p class="project-description">
-                  Dolor irure voluptate est consectetur eiusmod cupidatat.
-                </p>
+                <p class="project-title">Sportssync</p>
+                <p class="project-description">A Raycast Sports Extension</p>
               </div>
 
               <div class="learn-more">
@@ -106,7 +105,7 @@ import Connect from "../components/Connect.astro";
         <div class="blog-section-top">
           <h1 class="blog-section-title">Featured Blog Posts</h1>
           <a class="all-posts" href="blogs">
-            <p>View all posts ↗︎</p>
+            <p>View all projects <span class="arrow">↗︎</span></p>
           </a>
         </div>
 

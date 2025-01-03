@@ -95,7 +95,7 @@
 
 .arrow {
   color: var(--secondary-grey);
-  font-family: var(--Inter);
+  font-family: var(--Sf-Pro-Bold);
   cursor: pointer;
   transition: var(--ease-in-out);
 }
