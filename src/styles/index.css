@@ -33,9 +33,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
-  top: -30px;
+  top: -10px;
   left: 0;
 }
 
@@ -50,9 +50,9 @@ body {
   font-size: 1.1rem;
   font-family: var(--Inter);
   line-height: 1.6em;
-  width: 615px;
+  width: 575px;
   margin-top: 30px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .navigation-container {
