@@ -1,24 +1,24 @@
 <section class="dock">
-  <button class="home-button">
-    <a href="/">
+  <a href="/">
+    <button class="home-button">
       <span class="tooltip-text-1" id="fade">Home</span>
       <img src="home.svg" alt="home icon" />
-    </a>
-  </button>
+    </button>
+  </a>
 
-  <button class="today-button">
-    <a href="projects">
+  <a href="projects">
+    <button class="today-button">
       <span class="tooltip-text-2" id="fade">Projects</span>
       <img src="briefcase.svg" alt="briefcase icon" />
-    </a>
-  </button>
+    </button>
+  </a>
 
-  <button class="completed-button">
-    <a href="blogs">
+  <a href="blogs">
+    <button class="completed-button">
       <span class="tooltip-text-3" id="fade">Blogs</span>
       <img src="edit-3.svg" alt="pencil writing icon" />
-    </a>
-  </button>
+    </button>
+  </a>
 </section>
 
 <style>
@@ -26,12 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 50px;
-    width: 175px;
+    height: 58px;
+    width: 195px;
+    gap: 5px;
     padding: 15px 30px 15px 30px;
     margin-bottom: -25px;
-    border-radius: var(--border-radius);
+    border-radius: 999px;
     background: #131313;
     outline: 1px solid #343434;
     position: sticky;
@@ -41,21 +41,41 @@
     right: 0;
   }
 
+  .dock a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 12px;
+    transition:
+      transform 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+
+  .dock a:hover {
+    background-color: var(--hover-black);
+  }
+
   .tooltip-text-1,
   .tooltip-text-2,
   .tooltip-text-3 {
-    position: absolute;
-    top: -40px;
-    width: 85px;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
     color: var(--secondary-grey);
     font-family: var(--Inter);
-    font-size: 14px;
+    font-size: 0.95rem;
     text-align: center;
-    background-color: #171717;
     outline: 1px solid #343434;
-    border-radius: 0.4375rem;
+    border-radius: 0.5rem;
     padding: 7px 10px 7px 10px;
+    height: 35px;
+    width: 100px;
+    position: absolute;
+    top: -40px;
+    z-index: 2;
   }
 
   .tooltip-text-1 {
@@ -86,6 +106,8 @@
   .today-button,
   .completed-button,
   .projects-button {
+    height: 45px;
+    width: 45px;
     background-color: transparent;
     border: none;
     cursor: pointer;
