@@ -33,7 +33,8 @@
 .blog-section-title {
   color: var(--purple);
   font-size: 2.5rem;
-  font-family: var(--Sf-Pro-Bold);
+  font-family: var(--Inter);
+  font-weight: 650;
   text-align: left;
 }
 
@@ -95,7 +96,8 @@
 
 .arrow {
   color: var(--secondary-grey);
-  font-family: var(--Sf-Pro-Bold);
+  font-family: var(--Inter);
+  font-weight: 650;
   cursor: pointer;
   transition: var(--ease-in-out);
 }

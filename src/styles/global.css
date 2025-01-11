@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   --Inter: "Inter", Arial, Helvetica, sans-serif;
-  --Sf-Pro-Bold: SF-Pro-Bold, Arial, Helvetica, sans-serif;
   --white: #fff;
   --purple: #a88bfa;
   --primary-black: #050505;
@@ -31,12 +30,6 @@
   margin: 0;
   padding: 0;
   font: inherit;
-}
-
-@font-face {
-  font-family: SF-Pro-Bold;
-  src: url(SF-Pro.ttf) format("truetype");
-  font-weight: 700;
 }
 
 @keyframes fadeIn {

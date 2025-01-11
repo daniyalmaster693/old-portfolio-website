@@ -21,7 +21,8 @@
 .blog-top h1 {
   color: var(--purple);
   font-size: 2rem;
-  font-family: var(--Sf-Pro-Bold);
+  font-family: var(--Inter);
+  font-weight: 650;
   text-align: left;
   width: 600px;
 }
@@ -47,7 +48,8 @@
 
 .arrow {
   color: var(--secondary-grey);
-  font-family: var(--Sf-Pro-Bold);
+  font-family: var(--Inter);
+  font-weight: 650;
   cursor: pointer;
   transition: var(--ease-in-out);
 }
@@ -91,8 +93,9 @@ span {
 
 .blog-content h2 {
   color: var(--primary-grey);
-  font-size: 1.35rem;
   font-family: var(--Inter);
+  font-size: 1.35rem;
+  font-weight: 600;
   line-height: 1.25rem;
   text-align: left;
   width: 600px;
