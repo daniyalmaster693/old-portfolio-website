@@ -5,20 +5,20 @@
   align-items: center;
 }
 
-.post-section {
+.project-section {
   width: 100%;
   margin-top: 90px;
   animation: var(--fadeIn);
 }
 
-.blog-top {
+.project-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.blog-top h1 {
+.project-top h1 {
   color: var(--purple);
   font-size: 2rem;
   font-family: var(--Inter);
@@ -27,14 +27,14 @@
   width: 600px;
 }
 
-.post-hr {
+.project-hr {
   width: 37.5rem;
   border: var(--hr);
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-.post-information {
+.project-information {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@
   margin-top: 2rem;
 }
 
-.all-posts {
+.all-projects {
   text-decoration: none;
 }
 
@@ -54,8 +54,8 @@
   transition: var(--ease-in-out);
 }
 
-.blog-top p,
-.post-information p {
+.project-top p,
+.project-information p {
   color: var(--secondary-grey);
   font-size: 16px;
   font-family: var(--Inter);
@@ -66,17 +66,17 @@
   text-align: left;
 }
 
-.blog-top p {
+.project-top p {
   cursor: pointer;
   margin-bottom: 4rem;
   transition: var(--ease-in-out);
 }
 
-.blog-top p:hover {
+.project-top p:hover {
   color: var(--primary-grey);
 }
 
-.post-information p {
+.project-information p {
   margin-top: 0.75rem;
 }
 
@@ -84,26 +84,35 @@ span {
   color: var(--primary-grey);
 }
 
-.blog-content {
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.project-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 400px;
 }
 
-.blog-content h2 {
+.project-content h2 {
   color: var(--primary-grey);
   font-family: var(--Inter);
   font-size: 1.35rem;
-  font-weight: 450;
+  font-weight: 600;
   line-height: 1.25rem;
   text-align: left;
   width: 600px;
   margin-top: 3rem;
 }
 
-.blog-content p {
+.project-content p {
   color: var(--secondary-grey);
   font-size: 1rem;
   font-family: var(--Inter);

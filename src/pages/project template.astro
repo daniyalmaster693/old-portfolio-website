@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
-import "../styles/blog template.css";
+import "../styles/project template.css";
 import Navigation from "../components/Navigation.astro";
+import ImageCarousel from "../components/Image Carousel.astro";
 ---
 
 <html lang="en">
@@ -11,27 +12,33 @@ import Navigation from "../components/Navigation.astro";
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Daniyal Master's Blog Article." />
     <link rel="icon" type="image/png" sizes="32x32" href="Logo.png" />
-    <title>Blog | Daniyal Master</title>
+    <title>Project | Daniyal Master</title>
   </head>
   <body>
     <div class="maincontainer">
-      <section class="post-section">
-        <div class="blog-top">
-          <a class="all-posts" href="blogs">
-            <p><span class="arrow">←</span> View all projects</p>
-          </a>
+      <section class="project-section">
+        <section class="project-top-section">
+          <div class="project-top">
+            <a class="all-projects" href="projects">
+              <p><span class="arrow">←</span> View all projects</p>
+            </a>
 
-          <h1>Eiusmod et quis magna minim deserunt</h1>
-        </div>
+            <h1>Project Name...</h1>
+          </div>
 
-        <div class="post-information">
-          <p><span>Published:</span> 2024-05-24</p>
-          <p><span>Created by:</span> Daniyal.M</p>
-          <hr class="post-hr" />
-        </div>
+          <div class="project-information">
+            <p><span>Published:</span> Published Date...</p>
+            <p><span>Created by:</span> Daniyal.M</p>
+            <hr class="project-hr" />
+          </div>
+        </section>
 
-        <section class="blog-content">
-          <h2>Aliquip qui consequat nulla voluptate</h2>
+        <section class="image-carousel">
+          <ImageCarousel />
+        </section>
+
+        <section class="project-content">
+          <h2>Project Details</h2>
 
           <p>
             Et irure nisi irure est ea t duis elit tempor consequat. Aute aliqua
@@ -45,7 +52,7 @@ import Navigation from "../components/Navigation.astro";
             id anim.
           </p>
 
-          <h2>Aliquip qui consequat nulla voluptate</h2>
+          <h2>Features</h2>
 
           <p>
             Et irure nisi irure est ea sit sit duis elit tempor consequat. Aute
@@ -71,7 +78,21 @@ import Navigation from "../components/Navigation.astro";
             id anim.
           </p>
 
-          <h2>Aliquip qui consequat nulla voluptate</h2>
+          <h2>Results</h2>
+
+          <p>
+            Et irure nisi irure est ea sit sit duis elit tempor consequat. Aute
+            aliqua id occaecat. Adipisicing cupidatat et excepteur sunt ut est
+            ut ullamco esse aute qui nisi non exercitation id. Ex laboris aliqua
+            magna cillum officia minim qui Lorem sint veniam non officia id
+            anim. Et irure nisi irure est ea sit sit duis elit tempor consequat.
+            Aute aliqua id occaecat. Adipisicing cupidatat et excepteur sunt ut
+            est ut ullamco esse aute qui nisi non exercitation id. Ex laboris
+            aliqua magna cillum officia minim qui Lorem sint veniam non officia
+            id anim.
+          </p>
+
+          <h2>Summary</h2>
 
           <p>
             Et irure nisi irure est ea sit sit duis elit tempor consequat. Aute
