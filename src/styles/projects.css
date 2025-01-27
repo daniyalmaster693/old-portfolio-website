@@ -73,13 +73,13 @@ body {
   transition: var(--ease-in-out);
 }
 
-.project-1,
-.project-4 {
+.project-1 {
   cursor: pointer;
 }
 
 .project-2,
-.project-3 {
+.project-3,
+.project-4 {
   cursor: not-allowed;
 }
 
