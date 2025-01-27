@@ -61,6 +61,7 @@
   width: 600px;
   height: 85px;
   padding: 0 1.75em 0 1.75em;
+  margin-bottom: 10px;
   gap: 30px;
   border-radius: 1rem;
   transition: var(--ease-in-out);

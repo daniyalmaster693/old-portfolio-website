@@ -2,6 +2,16 @@
 import "../styles/global.css";
 import "../styles/blogs.css";
 import Navigation from "../components/Navigation.astro";
+
+const allPosts = Object.values(
+  import.meta.glob("./blogs/*.md", { eager: true })
+);
+
+const sortedPosts = allPosts.sort((a, b) => {
+  const dateA = new Date(a.frontmatter.pubDate);
+  const dateB = new Date(b.frontmatter.pubDate);
+  return dateB - dateA;
+});
 ---
 
 <html lang="en">
@@ -28,113 +38,27 @@ import Navigation from "../components/Navigation.astro";
           </div>
 
           <div class="blog-posts">
-            <a class="post-link" href="blog template">
-              <div class="post">
-                <div class="blog-content">
-                  <h2 class="post-title">Building my portfolio website</h2>
+            {
+              sortedPosts.map((post, index) => (
+                <div key={post.url}>
+                  <a class="post-link" href={post.url}>
+                    <div class="post">
+                      <div class="blog-content">
+                        <h2 class="post-title">{post.frontmatter.title}</h2>
+                        <div class="published-date">
+                          <p class="published">{post.frontmatter.pubDate}</p>
+                        </div>
+                      </div>
+                      <div class="read-more">
+                        <p class="arrow">↗︎</p>
+                      </div>
+                    </div>
+                  </a>
 
-                  <div class="published-date">
-                    <p class="published">2024-05-24</p>
-                  </div>
+                  {index !== sortedPosts.length - 1 && <hr class="blog-hr" />}
                 </div>
-
-                <div class="read-more">
-                  <p class="arrow">↗︎</p>
-                </div>
-              </div>
-            </a>
-
-            <hr class="blog-hr" />
-
-            <a class="post-link" href="blog template">
-              <div class="post">
-                <div class="blog-content">
-                  <h2 class="post-title">
-                    How I use an Android phone with a Mac
-                  </h2>
-
-                  <div class="published-date">
-                    <p class="published">2024-05-24</p>
-                  </div>
-                </div>
-
-                <div class="read-more">
-                  <p class="arrow">↗︎</p>
-                </div>
-              </div>
-            </a>
-
-            <hr class="blog-hr" />
-
-            <a class="post-link" href="blog template">
-              <div class="post">
-                <div class="blog-content">
-                  <h2 class="post-title">My One UI Setup</h2>
-
-                  <div class="published-date">
-                    <p class="published">2024-05-24</p>
-                  </div>
-                </div>
-
-                <div class="read-more">
-                  <p class="arrow">↗︎</p>
-                </div>
-              </div>
-            </a>
-
-            <hr class="blog-hr" />
-
-            <a class="post-link" href="blog template">
-              <div class="post">
-                <div class="blog-content">
-                  <h2 class="post-title">My One UI Setup</h2>
-
-                  <div class="published-date">
-                    <p class="published">2024-05-24</p>
-                  </div>
-                </div>
-
-                <div class="read-more">
-                  <p class="arrow">↗︎</p>
-                </div>
-              </div>
-            </a>
-
-            <hr class="blog-hr" />
-
-            <a class="post-link" href="blog template">
-              <div class="post">
-                <div class="blog-content">
-                  <h2 class="post-title">My Raycast Setup</h2>
-
-                  <div class="published-date">
-                    <p class="published">2024-05-24</p>
-                  </div>
-                </div>
-
-                <div class="read-more">
-                  <p class="arrow">↗︎</p>
-                </div>
-              </div>
-            </a>
-
-            <hr class="blog-hr" />
-
-            <a class="post-link" href="blog template">
-              <div class="post">
-                <div class="blog-content">
-                  <h2 class="post-title">My Mac Setup</h2>
-
-                  <div class="published-date">
-                    <p class="published">2024-05-24</p>
-                  </div>
-                </div>
-
-                <div class="read-more">
-                  <p class="arrow">↗︎</p>
-                </div>
-              </div>
-            </a>
+              ))
+            }
           </div>
         </section>
       </div>

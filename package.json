@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.13.1",
-    "typed.js": "^2.1.0"
+    "astro": "^4.13.1"
   }
 }
