@@ -58,11 +58,13 @@ body {
   text-decoration: none;
 }
 
-.project {
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
   width: 600px;
   height: 85px;
   padding: 0 1.75em 0 1.75em;
@@ -71,7 +73,20 @@ body {
   transition: var(--ease-in-out);
 }
 
-.project:hover {
+.project-1,
+.project-4 {
+  cursor: pointer;
+}
+
+.project-2,
+.project-3 {
+  cursor: not-allowed;
+}
+
+.project-1:hover,
+.project-2:hover,
+.project-3:hover,
+.project-4:hover {
   background-color: var(--hover-black);
 }
 
