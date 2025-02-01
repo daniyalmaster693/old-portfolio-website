@@ -2,6 +2,7 @@
 import "../../styles/global.css";
 import ScrollProgress from "../../components/Scroll Progress.astro";
 import ScrollBlur from "../../components/Scroll Blur.astro";
+import Footer from "../../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -136,192 +137,194 @@ import ScrollBlur from "../../components/Scroll Blur.astro";
           </p>
         </section>
       </section>
+
+      <Footer />
     </div>
+
+    <style>
+      .maincontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project-section {
+        width: 100%;
+        margin-top: 90px;
+        animation: var(--fadeIn);
+      }
+
+      .project-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project-top h1 {
+        color: var(--purple);
+        font-size: 2rem;
+        font-family: var(--Inter);
+        font-weight: 650;
+        text-align: left;
+        width: 600px;
+      }
+
+      .project-hr {
+        width: 37.5rem;
+        border: var(--hr);
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      .project-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+
+      .all-projects {
+        text-decoration: none;
+      }
+
+      .arrow {
+        color: var(--secondary-grey);
+        font-family: var(--Inter);
+        font-weight: 650;
+        cursor: pointer;
+        transition: var(--ease-in-out);
+      }
+
+      .project-top p,
+      .project-information p {
+        color: var(--secondary-grey);
+        font-size: 16px;
+        font-family: var(--Inter);
+        font-weight: 400;
+        letter-spacing: 0.023px;
+        line-height: 1rem;
+        width: 600px;
+        text-align: left;
+      }
+
+      .project-top p {
+        cursor: pointer;
+        margin-bottom: 4rem;
+        transition: var(--ease-in-out);
+      }
+
+      .project-top p:hover {
+        color: var(--primary-grey);
+      }
+
+      .project-information p {
+        margin-top: 0.75rem;
+      }
+
+      span {
+        color: var(--primary-grey);
+      }
+
+      .image-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+      }
+
+      .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 400px;
+      }
+
+      .project-content h2 {
+        color: var(--primary-grey);
+        font-family: var(--Inter);
+        font-size: 1.35rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        text-align: left;
+        width: 600px;
+        margin-top: 3rem;
+      }
+
+      .project-content p {
+        color: var(--secondary-grey);
+        font-size: 1rem;
+        font-family: var(--Inter);
+        font-weight: 400;
+        line-height: 1.75rem;
+        letter-spacing: 0.023rem;
+        width: 600px;
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+        text-align: left;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 350px;
+        transform-style: preserve-3d;
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      .card {
+        width: 600px;
+        height: 350px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+      }
+
+      img {
+        width: 600px;
+        height: 350px;
+        border-radius: 1.2rem;
+        object-fit: cover;
+      }
+
+      #item-1:checked ~ .cards #card-3,
+      #item-2:checked ~ .cards #card-1,
+      #item-3:checked ~ .cards #card-2 {
+        transform: translatex(-40%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+      }
+
+      #item-1:checked ~ .cards #card-2,
+      #item-2:checked ~ .cards #card-3,
+      #item-3:checked ~ .cards #card-1 {
+        transform: translatex(40%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+      }
+
+      #item-1:checked ~ .cards #card-1,
+      #item-2:checked ~ .cards #card-2,
+      #item-3:checked ~ .cards #card-3 {
+        transform: translatex(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+      }
+    </style>
   </body>
-
-  <style>
-    .maincontainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .project-section {
-      width: 100%;
-      margin-top: 90px;
-      animation: var(--fadeIn);
-    }
-
-    .project-top {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .project-top h1 {
-      color: var(--purple);
-      font-size: 2rem;
-      font-family: var(--Inter);
-      font-weight: 650;
-      text-align: left;
-      width: 600px;
-    }
-
-    .project-hr {
-      width: 37.5rem;
-      border: var(--hr);
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-
-    .project-information {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-    }
-
-    .all-projects {
-      text-decoration: none;
-    }
-
-    .arrow {
-      color: var(--secondary-grey);
-      font-family: var(--Inter);
-      font-weight: 650;
-      cursor: pointer;
-      transition: var(--ease-in-out);
-    }
-
-    .project-top p,
-    .project-information p {
-      color: var(--secondary-grey);
-      font-size: 16px;
-      font-family: var(--Inter);
-      font-weight: 400;
-      letter-spacing: 0.023px;
-      line-height: 1rem;
-      width: 600px;
-      text-align: left;
-    }
-
-    .project-top p {
-      cursor: pointer;
-      margin-bottom: 4rem;
-      transition: var(--ease-in-out);
-    }
-
-    .project-top p:hover {
-      color: var(--primary-grey);
-    }
-
-    .project-information p {
-      margin-top: 0.75rem;
-    }
-
-    span {
-      color: var(--primary-grey);
-    }
-
-    .image-carousel {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1rem;
-      margin-bottom: 4rem;
-    }
-
-    .project-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 400px;
-    }
-
-    .project-content h2 {
-      color: var(--primary-grey);
-      font-family: var(--Inter);
-      font-size: 1.35rem;
-      font-weight: 600;
-      line-height: 1.25rem;
-      text-align: left;
-      width: 600px;
-      margin-top: 3rem;
-    }
-
-    .project-content p {
-      color: var(--secondary-grey);
-      font-size: 1rem;
-      font-family: var(--Inter);
-      font-weight: 400;
-      line-height: 1.75rem;
-      letter-spacing: 0.023rem;
-      width: 600px;
-      margin-top: 1.75rem;
-      margin-bottom: 1.75rem;
-      text-align: left;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      max-width: 600px;
-      max-height: 350px;
-      transform-style: preserve-3d;
-    }
-
-    input[type="radio"] {
-      display: none;
-    }
-
-    .card {
-      width: 600px;
-      height: 350px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto;
-      transition: transform 0.4s ease;
-      cursor: pointer;
-    }
-
-    img {
-      width: 600px;
-      height: 350px;
-      border-radius: 1.2rem;
-      object-fit: cover;
-    }
-
-    #item-1:checked ~ .cards #card-3,
-    #item-2:checked ~ .cards #card-1,
-    #item-3:checked ~ .cards #card-2 {
-      transform: translatex(-40%) scale(0.8);
-      opacity: 0.4;
-      z-index: 0;
-    }
-
-    #item-1:checked ~ .cards #card-2,
-    #item-2:checked ~ .cards #card-3,
-    #item-3:checked ~ .cards #card-1 {
-      transform: translatex(40%) scale(0.8);
-      opacity: 0.4;
-      z-index: 0;
-    }
-
-    #item-1:checked ~ .cards #card-1,
-    #item-2:checked ~ .cards #card-2,
-    #item-3:checked ~ .cards #card-3 {
-      transform: translatex(0) scale(1);
-      opacity: 1;
-      z-index: 1;
-    }
-  </style>
 </html>
