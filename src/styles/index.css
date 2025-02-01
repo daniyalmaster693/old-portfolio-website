@@ -100,6 +100,9 @@ body {
 
 .featured-projects-top p,
 .blog-section-top p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: var(--secondary-grey);
   font-size: 16px;
   font-family: var(--Inter);
@@ -174,6 +177,8 @@ body {
 
 .arrow {
   color: var(--secondary-grey);
+  height: 16px;
+  width: 16px;
   font-family: var(--Inter);
   font-weight: 650;
   cursor: pointer;

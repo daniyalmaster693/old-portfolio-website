@@ -23,7 +23,23 @@ import Footer from "../../components/Footer.astro";
         <section class="project-top-section">
           <div class="project-top">
             <a class="all-projects" href="/projects">
-              <p><span class="arrow">←</span> View all projects</p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                  class="arrow"
+                >
+                  <g transform="scale(-1,1) translate(-16,0)">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path>
+                  </g>
+                </svg> View all projects
+              </p>
             </a>
 
             <h1>Sportssync Raycast Extension</h1>
@@ -190,12 +206,24 @@ import Footer from "../../components/Footer.astro";
         text-decoration: none;
       }
 
+      .all-projects p {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
       .arrow {
         color: var(--secondary-grey);
+        height: 16px;
+        width: 16px;
         font-family: var(--Inter);
         font-weight: 650;
         cursor: pointer;
         transition: var(--ease-in-out);
+      }
+
+      .arrow:hover {
+        color: var(--primary-grey);
       }
 
       .project-top p,
