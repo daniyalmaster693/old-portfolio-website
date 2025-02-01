@@ -1,0 +1,27 @@
+<div class="scroll-blur">
+  <div class="top-blur-container">
+    <div class="top-blur"></div>
+  </div>
+</div>
+
+<style>
+  .scroll-blur {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .top-blur-container {
+    width: 100%;
+    height: 40px;
+  }
+
+  .top-blur {
+    height: 40px;
+    background-color: rgb(23 23 23 / 0.6);
+    mask-image: linear-gradient(180deg, #000, transparent);
+    --webkit-mask-image: linear-gradient(180deg, #000, transparent);
+    width: 100%;
+  }
+</style>

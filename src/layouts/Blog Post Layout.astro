@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import ScrollProgress from "../components/Scroll Progress.astro";
+import ScrollBlur from "../components/Scroll Blur.astro";
 const { frontmatter } = Astro.props;
 ---
 
@@ -15,6 +16,7 @@ const { frontmatter } = Astro.props;
   </head>
   <body>
     <div class="maincontainer">
+      <ScrollBlur />
       <ScrollProgress />
 
       <section class="post-section">
@@ -34,29 +36,6 @@ const { frontmatter } = Astro.props;
 
         <section class="blog-content">
           <slot />
-
-          <section class="dock">
-            <a href="/">
-              <button class="home-button">
-                <span class="tooltip-text-1" id="fade">Home</span>
-                <img src="/home.svg" alt="home icon" />
-              </button>
-            </a>
-
-            <a href="/projects">
-              <button class="today-button">
-                <span class="tooltip-text-2" id="fade">Projects</span>
-                <img src="/briefcase.svg" alt="briefcase icon" />
-              </button>
-            </a>
-
-            <a href="/blogs">
-              <button class="completed-button">
-                <span class="tooltip-text-3" id="fade">Blogs</span>
-                <img src="/edit-3.svg" alt="pencil writing icon" />
-              </button>
-            </a>
-          </section>
         </section>
       </section>
     </div>
@@ -179,105 +158,6 @@ const { frontmatter } = Astro.props;
       margin-top: 1.75rem;
       margin-bottom: 1.75rem;
       text-align: left;
-    }
-
-    .dock {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 58px;
-      width: 195px;
-      gap: 5px;
-      padding: 15px 30px 15px 30px;
-      margin-bottom: -25px;
-      border-radius: 999px;
-      background: #131313;
-      outline: 1px solid #343434;
-      position: sticky;
-      bottom: 15px;
-      z-index: 999;
-      left: 0;
-      right: 0;
-    }
-
-    .dock a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 45px;
-      width: 45px;
-      border-radius: 12px;
-      transition:
-        transform 0.3s ease-in-out,
-        background-color 0.3s ease-in-out;
-    }
-
-    .dock a:hover {
-      background-color: var(--hover-black);
-    }
-
-    .tooltip-text-1,
-    .tooltip-text-2,
-    .tooltip-text-3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #131313;
-      color: var(--secondary-grey);
-      font-family: var(--Inter);
-      font-size: 0.95rem;
-      text-align: center;
-      outline: 1px solid #343434;
-      border-radius: 0.5rem;
-      padding: 7px 10px 7px 10px;
-      height: 35px;
-      width: 100px;
-      position: absolute;
-      top: -40px;
-      z-index: 2;
-    }
-
-    .tooltip-text-1 {
-      left: 0;
-    }
-
-    .tooltip-text-2 {
-      left: 25%;
-    }
-
-    .tooltip-text-3 {
-      right: 0;
-    }
-
-    #fade {
-      opacity: 0;
-      transition: opacity 0.5s;
-    }
-
-    .home-button:hover #fade,
-    .today-button:hover #fade,
-    .completed-button:hover #fade,
-    .projects-button:hover #fade {
-      opacity: 1;
-    }
-
-    .home-button,
-    .today-button,
-    .completed-button,
-    .projects-button {
-      height: 45px;
-      width: 45px;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-    }
-
-    .home-button img,
-    .today-button img,
-    .completed-button img,
-    .projects-button img {
-      height: 22px;
-      width: 22px;
     }
   </style>
 </html>

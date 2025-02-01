@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
 import "../styles/blogs.css";
-import Navigation from "../components/Navigation.astro";
+import ScrollBlur from "../components/Scroll Blur.astro";
+import Footer from "../components/Footer.astro";
 
 const allPosts = Object.values(
   import.meta.glob("./blogs/*.md", { eager: true })
@@ -28,6 +29,8 @@ const sortedPosts = allPosts.sort((a, b) => {
   </head>
   <body>
     <div class="maincontainer">
+      <ScrollBlur />
+
       <div class="grid-wrapper">
         <section class="blog-posts-section">
           <div class="blog-section-top">
@@ -63,7 +66,7 @@ const sortedPosts = allPosts.sort((a, b) => {
         </section>
       </div>
 
-      <Navigation />
+      <Footer />
     </div>
   </body>
 </html>

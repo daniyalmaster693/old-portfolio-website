@@ -1,9 +1,8 @@
 ---
 import "../styles/global.css";
 import "../styles/index.css";
-import ShootingStars from "../components/Shooting Stars.astro";
-import Navigation from "../components/Navigation.astro";
-import Connect from "../components/Connect.astro";
+import ScrollBlur from "../components/Scroll Blur.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -17,22 +16,18 @@ import Connect from "../components/Connect.astro";
     />
     <link rel="icon" type="image/png" sizes="32x32" href="Logo.png" />
     <link rel="preload" href="SF-Pro.ttf" as="font" type="font/ttf" />
-    <title>Home | Daniyal Master</title>
+    <title>Daniyal Master</title>
   </head>
   <body>
-    <!-- <Navigation /> -->
-
     <div class="maincontainer">
-      <section class="hero-section">
-        <div class="hero-background">
-          <ShootingStars />
-        </div>
+      <ScrollBlur />
 
+      <section class="hero-section">
         <div class="hero-content">
           <h1 class="hero-title">Hi, I'm Daniyal.</h1>
           <p class="hero-description">
-            I'm a student, web developer, and aspiring full stack developer.
-            This is my space where I share projects and thoughts.
+            I'm a student, web developer, and aspiring full stack developer. I
+            primarily work using the Javascript ecosystem
           </p>
         </div>
       </section>
@@ -50,7 +45,7 @@ import Connect from "../components/Connect.astro";
         </div>
 
         <div class="featured-projects">
-          <a class="project-link" href="project template">
+          <a class="project-link" href="/projects/sportssync">
             <div class="project">
               <div class="project-content">
                 <p class="project-title">Sportssync</p>
@@ -130,10 +125,10 @@ import Connect from "../components/Connect.astro";
         </div>
 
         <div class="blog-posts">
-          <a class="post-link" href="blog template">
+          <a class="post-link" href="/blogs/creating-my-portfolio-website">
             <div class="post">
               <div class="blog-content">
-                <h2 class="post-title">Building my portfolio website</h2>
+                <h2 class="post-title">Creating my portfolio website</h2>
 
                 <div class="published-date">
                   <p class="published">2024-05-24</p>
@@ -148,7 +143,10 @@ import Connect from "../components/Connect.astro";
 
           <hr class="blog-hr" />
 
-          <a class="post-link" href="blog template">
+          <a
+            class="post-link"
+            href="/blogs/how-i-use-an-android-phone-with-a-mac"
+          >
             <div class="post">
               <div class="blog-content">
                 <h2 class="post-title">
@@ -168,7 +166,7 @@ import Connect from "../components/Connect.astro";
 
           <hr class="blog-hr" />
 
-          <a class="post-link" href="blog template">
+          <a class="post-link" href="/blogs/my-raycast-setup">
             <div class="post">
               <div class="blog-content">
                 <h2 class="post-title">My Raycast Setup</h2>
@@ -186,7 +184,7 @@ import Connect from "../components/Connect.astro";
 
           <hr class="blog-hr" />
 
-          <a class="post-link" href="blog template">
+          <a class="post-link" href="/blogs/my-mac-setup">
             <div class="post">
               <div class="blog-content">
                 <h2 class="post-title">My Mac Setup</h2>
@@ -204,29 +202,153 @@ import Connect from "../components/Connect.astro";
         </div>
       </section>
 
-      <Connect />
-      <Navigation />
+      <section class="connect-with-me">
+        <div class="connect-with-me-top">
+          <h2 class="connect-with-me-title">Connect</h2>
+          <p class="connect-with-me-description">
+            Reach out using social media or send me an email to get in touch.
+          </p>
+        </div>
 
-      <!-- <footer class="footer">
-      <hr class="hr" />
-      <p class="copyrights">© 2024 • Daniyal Master. All Rights Reserved.</p>
-    </footer> -->
+        <div class="social-media-links">
+          <div class="github">
+            <a
+              href="https://github.com/daniyalmaster693"
+              target="_blank"
+              aria-label="Daniyal Master's Github Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a6a6a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+                ><path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path></svg
+              >
+            </a>
+          </div>
+
+          <div class="codepen">
+            <a
+              href="https://codepen.io/daniyalmaster693"
+              target="_blank"
+              aria-label="Daniyal Master's Codepen Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a6a6a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-codepen"
+              >
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                ></polygon>
+                <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                <line x1="12" y1="2" x2="12" y2="8.5"></line>
+              </svg>
+            </a>
+          </div>
+
+          <div class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/daniyal-master-841925319/"
+              target="_blank"
+              aria-label="Daniyal Master's Linkedin Profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a6a6a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+                ><path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path><rect x="2" y="9" width="4" height="12"></rect><circle
+                  cx="4"
+                  cy="4"
+                  r="2"></circle></svg
+              >
+            </a>
+          </div>
+
+          <div class="email">
+            <a
+              href="mailto:daniyalmaster693@gmail.com"
+              target="_blank"
+              aria-label="Daniyal Master's Email"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a6a6a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-mail"
+                ><path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path><polyline points="22,6 12,13 2,6"></polyline></svg
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="email-copy">
+          <button
+            class="copy-email"
+            value="daniyalmaster693@gmail.com"
+            onclick="(() => {
+          const email = document.querySelector('.copy-email').value;
+          navigator.clipboard.writeText (email);
+          const copiedMessage = document.querySelector('.copied-message');
+          copiedMessage.style.display = 'block';
+          setTimeout(() => {
+            copiedMessage.style.display = 'none';}, 
+            3000);})()"
+          >
+            daniyalmaster693@gmail.com
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-sm"
+              ><path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z"
+                fill="currentColor"></path></svg
+            >
+          </button>
+        </div>
+
+        <div class="copied-message">Copied to clipboard!</div>
+      </section>
+
+      <Footer />
     </div>
-  </body><script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.add("fade-in");
-    });
-
-    function handlePageTransition(event) {
-      event.preventDefault();
-
-      document.body.classList.remove("fade-in");
-      document.body.classList.add("fade-out");
-      window.location.href = event.target.href;
-    }
-
-    document.querySelectorAll(".navlink").forEach((link) => {
-      link.addEventListener("click", handlePageTransition);
-    });
-  </script>
+  </body>
 </html>
