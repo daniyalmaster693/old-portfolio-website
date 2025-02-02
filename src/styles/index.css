@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 550px;
   width: 100%;
   animation: var(--fadeIn);
 }
@@ -47,6 +47,7 @@ body {
   position: relative;
   overflow: hidden;
   padding: 6px 12px 6px 12px;
+  margin-left: -23px;
   transition: box-shadow var(--transition), background var(--transition),
     transform var(--transition);
 }
@@ -176,6 +177,10 @@ body {
   align-items: flex-start;
   max-width: 600px;
   animation: var(--fadeIn);
+}
+
+.featured-projects-section {
+  margin-top: 4rem;
 }
 
 .blog-posts-section,
