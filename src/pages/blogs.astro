@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/blogs.css";
+import Navigation from "../components/Navigation.astro";
 import ScrollBlur from "../components/Scroll Blur.astro";
 import Footer from "../components/Footer.astro";
 
@@ -30,6 +31,7 @@ const sortedPosts = allPosts.sort((a, b) => {
   <body>
     <div class="maincontainer">
       <ScrollBlur />
+      <Navigation />
 
       <div class="grid-wrapper">
         <section class="blog-posts-section">

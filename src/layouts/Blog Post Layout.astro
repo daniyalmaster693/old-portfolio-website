@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
 import ScrollProgress from "../components/Scroll Progress.astro";
 import ScrollBlur from "../components/Scroll Blur.astro";
 import Footer from "../components/Footer.astro";
@@ -19,6 +20,7 @@ const { frontmatter } = Astro.props;
     <div class="maincontainer">
       <ScrollBlur />
       <ScrollProgress />
+      <Navigation />
 
       <section class="post-section">
         <div class="blog-top">

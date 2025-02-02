@@ -1,123 +1,84 @@
-<section class="dock">
-  <a href="/">
-    <button class="home-button">
-      <span class="tooltip-text-1" id="fade">Home</span>
-      <img src="home.svg" alt="home icon" />
-    </button>
-  </a>
+<div class="navbarholder">
+  <div class="navcontentholder">
+    <div class="left-side">
+      <a class="navlink-home" href="/" aria-current="page"
+        ><p>Daniyal Master</p></a
+      >
+    </div>
 
-  <a href="projects">
-    <button class="today-button">
-      <span class="tooltip-text-2" id="fade">Projects</span>
-      <img src="briefcase.svg" alt="briefcase icon" />
-    </button>
-  </a>
-
-  <a href="blogs">
-    <button class="completed-button">
-      <span class="tooltip-text-3" id="fade">Blogs</span>
-      <img src="edit-3.svg" alt="pencil writing icon" />
-    </button>
-  </a>
-</section>
+    <div class="right-side">
+      <a class="navlink" href="/projects" aria-current="page"><p>Projects</p></a
+      >
+      <a class="navlink" href="/blogs" aria-current="page"><p>Blogs</p></a>
+    </div>
+  </div>
+</div>
 
 <style>
-  .dock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 58px;
-    width: 195px;
-    gap: 5px;
-    padding: 15px 30px 15px 30px;
-    margin-bottom: -25px;
-    border-radius: 999px;
-    background: #131313;
-    outline: 1px solid #343434;
-    position: sticky;
-    bottom: 15px;
+  .navbarholder {
     z-index: 999;
-    left: 0;
-    right: 0;
-  }
-
-  .dock a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
-    width: 45px;
-    border-radius: 12px;
-    transition:
-      transform 0.3s ease-in-out,
-      background-color 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    width: 100%;
   }
 
-  .dock a:hover {
-    background-color: var(--hover-black);
-  }
-
-  .tooltip-text-1,
-  .tooltip-text-2,
-  .tooltip-text-3 {
+  .navcontentholder {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #131313;
-    color: var(--secondary-grey);
-    font-family: var(--Inter);
-    font-size: 0.95rem;
-    text-align: center;
-    outline: 1px solid #343434;
-    border-radius: 0.5rem;
-    padding: 7px 10px 7px 10px;
-    height: 35px;
-    width: 100px;
-    position: absolute;
-    top: -40px;
+    height: 55px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 999px;
+    margin: 20px 15px 0px 15px;
+    padding: 0px 30px 0px 30px;
+    border: 1px solid #3f3f48;
+    background: linear-gradient(137deg, #121114d9 4.87%, #0d0c0fcc 80%);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
     z-index: 2;
   }
 
-  .tooltip-text-1 {
-    left: 0;
+  .navlink-home,
+  .navlink {
+    font-size: 0.9rem;
+    font-family: var(--Inter);
+    font-weight: 400;
+    letter-spacing: 0.023rem;
+    line-height: 1.6em;
+    text-decoration: none;
+    transition: var(--ease-in-out);
   }
 
-  .tooltip-text-2 {
-    left: 25%;
+  .navlink-home {
+    color: var(--primary-grey);
   }
 
-  .tooltip-text-3 {
-    right: 0;
+  .navlink-home:hover {
+    color: var(--purple);
   }
 
-  #fade {
-    opacity: 0;
-    transition: opacity 0.5s;
+  .navlink {
+    color: var(--secondary-grey);
   }
 
-  .home-button:hover #fade,
-  .today-button:hover #fade,
-  .completed-button:hover #fade,
-  .projects-button:hover #fade {
-    opacity: 1;
+  .navlink:hover {
+    color: var(--primary-grey);
   }
 
-  .home-button,
-  .today-button,
-  .completed-button,
-  .projects-button {
-    height: 45px;
-    width: 45px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  .left-side {
+    display: flex;
+    align-items: center;
   }
 
-  .home-button img,
-  .today-button img,
-  .completed-button img,
-  .projects-button img {
-    height: 22px;
-    width: 22px;
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 25px;
   }
 </style>
