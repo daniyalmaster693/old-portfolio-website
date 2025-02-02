@@ -37,8 +37,23 @@ body {
   align-items: center;
   gap: 13px;
   border-radius: 100px;
-  border: 1px solid #3f3f48;
+  border: 1px solid #0505055f;
   padding: 6px 12px 6px 12px;
+  background: linear-gradient(#050505, #050505) padding-box,
+    linear-gradient(var(--angle), #050505, var(--purple)) border-box;
+  animation: 7s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .available-for-projects-description {
