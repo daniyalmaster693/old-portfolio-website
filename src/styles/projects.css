@@ -1,5 +1,8 @@
-body {
-  height: 100vh;
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .featured-projects-section {
@@ -7,8 +10,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin-top: 150px;
+  width: 100%;
   animation: var(--fadeIn);
 }
 
@@ -17,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 90px 0 140px 0;
+  margin-top: 90px;
   width: 655px;
   gap: 10px;
 }
