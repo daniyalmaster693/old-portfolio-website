@@ -40,6 +40,7 @@ body {
   border: 1px solid #3f3f48;
   border-radius: 100px;
   padding: 6px 15px 6px 15px;
+  box-shadow: var(--box-shadow);
 }
 
 .available-for-projects {
