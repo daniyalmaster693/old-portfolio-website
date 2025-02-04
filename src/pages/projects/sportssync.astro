@@ -93,6 +93,16 @@ import Footer from "../../components/Footer.astro";
             favorite sports leagues.
           </p>
 
+          <h2>Tech Stack Used</h2>
+
+          <ul>
+            <li>Typescript</li>
+
+            <li>React</li>
+
+            <li>Raycast API</li>
+          </ul>
+
           <h2>Links</h2>
 
           <ul>
@@ -136,8 +146,10 @@ import Footer from "../../components/Footer.astro";
           <h2>Supported Leagues</h2>
 
           <p>
-            Leagues that are fully supported include the following: a scores and
-            schedule, standings, and news command
+            <em>
+              Leagues that are fully supported include the following: a scores
+              and schedule, standings, and news command</em
+            >
           </p>
 
           <ul>
@@ -179,7 +191,7 @@ import Footer from "../../components/Footer.astro";
             </li>
           </ul>
 
-          <p>In depth stats, for the scores and schedule command:</p>
+          <p><em> In depth stats, for the scores and schedule command:</em></p>
 
           <ul>
             <li>
@@ -331,6 +343,7 @@ import Footer from "../../components/Footer.astro";
       }
 
       .project-content p,
+      .project-content em,
       .project-content li,
       .project-content a {
         color: var(--secondary-grey);
@@ -343,9 +356,14 @@ import Footer from "../../components/Footer.astro";
         text-align: left;
       }
 
-      .project-content p {
+      .project-content p,
+      .project-content em {
         margin-top: 1.75rem;
         margin-bottom: 1.75rem;
+      }
+
+      .project-content em {
+        font-style: italic;
       }
 
       .project-content ul {
