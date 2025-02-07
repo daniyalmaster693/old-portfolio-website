@@ -2,227 +2,240 @@
 import "../styles/global.css";
 ---
 
-<body>
-  <div class="container">
-    <div class="primary-text">
-      <h1>404 Page Not Found</h1>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Daniyal Master's Projects. Current and previous projects"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="Logo.png" />
+    <title>404 Page Not Found</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="primary-text">
+        <h1>404 Page Not Found</h1>
+      </div>
+
+      <div class="redirects">
+        <p class="secondary-text">Are you looking for...</p>
+
+        <div class="links">
+          <ul>
+            <li>
+              <a class="home" href="/">
+                <p>Home</p>
+              </a>
+            </li>
+
+            <li>
+              <a class="projects" href="/projects">
+                <p>Projects</p>
+              </a>
+            </li>
+
+            <li>
+              <a class="posts" href="/blogs">
+                <p>Blog Posts</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social-media-links">
+        <div class="github">
+          <a
+            href="https://github.com/daniyalmaster693"
+            target="_blank"
+            aria-label="Daniyal Master's Github Profile"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-github"
+              ><path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path></svg
+            >
+          </a>
+        </div>
+
+        <div class="codepen">
+          <a
+            href="https://codepen.io/daniyalmaster693"
+            target="_blank"
+            aria-label="Daniyal Master's Codepen Profile"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-codepen"
+            >
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+              ></polygon>
+              <line x1="12" y1="22" x2="12" y2="15.5"></line>
+              <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+              <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+              <line x1="12" y1="2" x2="12" y2="8.5"></line>
+            </svg>
+          </a>
+        </div>
+
+        <div class="linkedin">
+          <a
+            href="https://www.linkedin.com/in/daniyal-master-841925319/"
+            target="_blank"
+            aria-label="Daniyal Master's Linkedin Profile"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-linkedin"
+              ><path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path><rect x="2" y="9" width="4" height="12"></rect><circle
+                cx="4"
+                cy="4"
+                r="2"></circle></svg
+            >
+          </a>
+        </div>
+
+        <div class="email">
+          <a
+            href="mailto:daniyalmaster693@gmail.com"
+            target="_blank"
+            aria-label="Daniyal Master's Email"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-mail"
+              ><path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path><polyline points="22,6 12,13 2,6"></polyline></svg
+            >
+          </a>
+        </div>
+      </div>
     </div>
+  </body>
 
-    <div class="redirects">
-      <p class="secondary-text">Are you looking for...</p>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      <div class="links">
-        <ul>
-          <li>
-            <a class="home" href="/">
-              <p>Home</p>
-            </a>
-          </li>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-          <li>
-            <a class="projects" href="/projects">
-              <p>Projects</p>
-            </a>
-          </li>
+    h1 {
+      color: var(--purple);
+      font-size: 3.5rem;
+      font-family: var(--Inter);
+      font-weight: 650;
+      text-align: left;
+    }
 
-          <li>
-            <a class="posts" href="/blogs">
-              <p>Blog Posts</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    p {
+      color: var(--secondary-grey);
+      font-size: 1.1rem;
+      font-family: var(--Inter);
+      font-weight: 400;
+      letter-spacing: 0.023px;
+      line-height: 1rem;
+      text-align: center;
+      transition: var(--ease-in-out);
+    }
 
-    <div class="social-media-links">
-      <div class="github">
-        <a
-          href="https://github.com/daniyalmaster693"
-          target="_blank"
-          aria-label="Daniyal Master's Github Profile"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#a6a6a6"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-github"
-            ><path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-            ></path></svg
-          >
-        </a>
-      </div>
+    .secondary-text {
+      margin-top: 4rem;
+    }
 
-      <div class="codepen">
-        <a
-          href="https://codepen.io/daniyalmaster693"
-          target="_blank"
-          aria-label="Daniyal Master's Codepen Profile"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#a6a6a6"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-codepen"
-          >
-            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
-            ></polygon>
-            <line x1="12" y1="22" x2="12" y2="15.5"></line>
-            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-            <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
-            <line x1="12" y1="2" x2="12" y2="8.5"></line>
-          </svg>
-        </a>
-      </div>
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
 
-      <div class="linkedin">
-        <a
-          href="https://www.linkedin.com/in/daniyal-master-841925319/"
-          target="_blank"
-          aria-label="Daniyal Master's Linkedin Profile"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#a6a6a6"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-linkedin"
-            ><path
-              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-            ></path><rect x="2" y="9" width="4" height="12"></rect><circle
-              cx="4"
-              cy="4"
-              r="2"></circle></svg
-          >
-        </a>
-      </div>
+    li {
+      color: var(--purple);
+      margin-top: 1rem;
+    }
 
-      <div class="email">
-        <a
-          href="mailto:daniyalmaster693@gmail.com"
-          target="_blank"
-          aria-label="Daniyal Master's Email"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#a6a6a6"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-mail"
-            ><path
-              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-            ></path><polyline points="22,6 12,13 2,6"></polyline></svg
-          >
-        </a>
-      </div>
-    </div>
-  </div>
-</body>
+    li p:hover {
+      color: var(--primary-grey);
+    }
 
-<style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .home,
+    .projects,
+    .posts {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    .social-media-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.9375rem;
+      margin-top: 2.5rem;
+    }
 
-  h1 {
-    color: var(--purple);
-    font-size: 3.5rem;
-    font-family: var(--Inter);
-    font-weight: 650;
-    text-align: left;
-  }
+    .github svg,
+    .codepen svg,
+    .linkedin svg,
+    .email svg {
+      cursor: pointer;
+      transition: var(--ease-in-out);
+    }
 
-  p {
-    color: var(--secondary-grey);
-    font-size: 1.1rem;
-    font-family: var(--Inter);
-    font-weight: 400;
-    letter-spacing: 0.023px;
-    line-height: 1rem;
-    text-align: center;
-    transition: var(--ease-in-out);
-  }
-
-  .secondary-text {
-    margin-top: 4rem;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-  }
-
-  li {
-    color: var(--purple);
-    margin-top: 1rem;
-  }
-
-  li p:hover {
-    color: var(--primary-grey);
-  }
-
-  .home,
-  .projects,
-  .posts {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-
-  .social-media-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.9375rem;
-    margin-top: 2.5rem;
-  }
-
-  .github svg,
-  .codepen svg,
-  .linkedin svg,
-  .email svg {
-    cursor: pointer;
-    transition: var(--ease-in-out);
-  }
-
-  .github svg:hover,
-  .codepen svg:hover,
-  .linkedin svg:hover,
-  .email svg:hover {
-    stroke: var(--purple);
-  }
-</style>
+    .github svg:hover,
+    .codepen svg:hover,
+    .linkedin svg:hover,
+    .email svg:hover {
+      stroke: var(--purple);
+    }
+  </style>
+</html>
