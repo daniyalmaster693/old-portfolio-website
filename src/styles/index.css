@@ -374,7 +374,7 @@
   font-family: var(--Inter);
   font-weight: 400;
   width: 600px;
-  position: fixed;
+  position: absolute;
   margin-top: 100px;
   margin-left: 190px;
   animation: fadeOut 3s;
