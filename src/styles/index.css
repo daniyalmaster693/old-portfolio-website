@@ -377,10 +377,10 @@
   position: absolute;
   margin-top: 100px;
   margin-left: 190px;
-  animation: fadeOut 3s;
+  animation: copyFade 3s;
 }
 
-@keyframes fadeOut {
+@keyframes copyFade {
   0% {
     opacity: 1;
   }
