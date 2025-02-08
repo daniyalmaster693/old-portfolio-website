@@ -20,7 +20,7 @@ const { frontmatter } = Astro.props;
     <div class="maincontainer">
       <ScrollBlur />
       <ScrollProgress />
-      <Navigation transition:persist />
+      <Navigation />
 
       <section class="post-section">
         <div class="blog-top">
@@ -76,7 +76,8 @@ const { frontmatter } = Astro.props;
   .post-section {
     width: 100%;
     margin-top: 90px;
-    animation: var(--fadeIn);
+    opacity: 0;
+    animation: fadeIn var(--fadeInDuration) forwards;
   }
 
   .blog-top {

@@ -80,13 +80,7 @@
   }
 }
 
-body.fade-out {
-  animation: fadeOut var(--fadeOutDuration) forwards;
-}
-
 body {
   min-height: 100vh;
   background-color: var(--primary-black);
-  opacity: 0;
-  animation: fadeIn var(--fadeInDuration) forwards;
 }
