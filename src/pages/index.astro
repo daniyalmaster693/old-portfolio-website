@@ -82,7 +82,7 @@ import BaseLayout from "../layouts/Base Layout.astro";
                     d="M20 14.4a.8.8 0 1 1 0 1.6a.8.8 0 0 1 0-1.6m-11.2 0h4.8a.8.8 0 1 1 0 1.6H8.8a.8.8 0 1 1 0-1.6M7.2 9.6a.8.8 0 0 1 .8.8V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 0 1 .8-.8m-3.999.759A2.4 2.4 0 0 1 7.2 8.612a2.4 2.4 0 0 1 4 1.788V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 1 0-1.6 0V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 1 0-1.6 0V12a.8.8 0 1 1-1.6 0v-1.6zM17.6 12.8v2.4a.8.8 0 1 1-1.6 0v-2.4h-2.306c-.493 0-.894-.358-.894-.8s.401-.8.894-.8h6.212c.493 0 .894.358.894.8s-.401.8-.894.8zM16.8 8H20a.8.8 0 1 1 0 1.6h-3.2a.8.8 0 1 1 0-1.6M4 14.4h1.6a.8.8 0 1 1 0 1.6H4a.8.8 0 1 1 0-1.6M13.2 8h.4a.8.8 0 1 1 0 1.6h-.4a.8.8 0 1 1 0-1.6M1.6 14.4H0V8.8c0-2.208 1.792-4 4-4h16c2.208 0 4 1.792 4 4v6.4c0 2.208-1.792 4-4 4H4c-2.208 0-4-1.792-4-4v-1.6h1.6v1.6A2.4 2.4 0 0 0 4 17.6h16a2.4 2.4 0 0 0 2.4-2.4V8.8A2.4 2.4 0 0 0 20 6.4H4a2.4 2.4 0 0 0-2.4 2.4z"
                   ></path></svg
                 >
-                <p class="label-text">108 WPM</p>
+                <p class="wpm-label-text">108 WPM</p>
               </div>
 
               <div class="accuracy">
@@ -100,7 +100,7 @@ import BaseLayout from "../layouts/Base Layout.astro";
                   ></path></svg
                 >
 
-                <p class="label-text">93% ACC</p>
+                <p class="acc-label-text">93% ACC</p>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ import BaseLayout from "../layouts/Base Layout.astro";
                   d="M12 .297c-6.63 0-12 5.373-12 12c0 5.303 3.438 9.8 8.205 11.385c.6.113.82-.258.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729c1.205.084 1.838 1.236 1.838 1.236c1.07 1.835 2.809 1.305 3.495.998c.108-.776.417-1.305.76-1.605c-2.665-.3-5.466-1.332-5.466-5.93c0-1.31.465-2.38 1.235-3.22c-.135-.303-.54-1.523.105-3.176c0 0 1.005-.322 3.3 1.23c.96-.267 1.98-.399 3-.405c1.02.006 2.04.138 3 .405c2.28-1.552 3.285-1.23 3.285-1.23c.645 1.653.24 2.873.12 3.176c.765.84 1.23 1.91 1.23 3.22c0 4.61-2.805 5.625-5.475 5.92c.42.36.81 1.096.81 2.22c0 1.606-.015 2.896-.015 3.286c0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
                 ></path></svg
               >
-              <p class="label-text">604 Contributions</p>
+              <p class="github-label-text">604 Contributions</p>
             </div>
           </div>
         </a>
@@ -566,3 +566,44 @@ import BaseLayout from "../layouts/Base Layout.astro";
     </section>
   </BaseLayout>
 </html>
+
+<script is:inline>
+  function animateCounter(element, targetValue, duration) {
+    let startValue = 0;
+    const stepTime = duration / targetValue;
+
+    element.textContent =
+      startValue +
+      (element.classList.contains("wpm-label-text")
+        ? " WPM"
+        : element.classList.contains("acc-label-text")
+          ? "% ACC"
+          : " Contributions");
+
+    const interval = setInterval(() => {
+      startValue++;
+
+      if (element.classList.contains("wpm-label-text")) {
+        element.textContent = startValue + " WPM";
+      } else if (element.classList.contains("acc-label-text")) {
+        element.textContent = startValue + "% ACC";
+      } else if (element.classList.contains("github-label-text")) {
+        element.textContent = startValue + " Contributions";
+      }
+
+      if (startValue === targetValue) {
+        clearInterval(interval);
+      }
+    }, stepTime);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const wpmElement = document.querySelector(".wpm-label-text");
+    const accElement = document.querySelector(".acc-label-text");
+    const gitElement = document.querySelector(".github-label-text");
+
+    animateCounter(wpmElement, 108, 3000);
+    animateCounter(accElement, 93, 3000);
+    animateCounter(gitElement, 604, 3500);
+  });
+</script>

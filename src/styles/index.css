@@ -111,7 +111,10 @@
 }
 
 .available-for-projects-description,
-.label-text {
+.label-text,
+.wpm-label-text,
+.acc-label-text,
+.github-label-text {
   color: var(--primary-grey);
   font-size: 0.875rem;
   font-family: var(--Inter);
