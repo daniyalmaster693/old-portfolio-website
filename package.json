@@ -1,5 +1,5 @@
 {
-  "name": "projects-portflio-website",
+  "name": "projects-portfolio-website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "astro": "^5.2.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
   }
 }

@@ -1,9 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/index.css";
-import Navigation from "../components/Navigation.astro";
-import ScrollBlur from "../components/Scroll Blur.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/Base Layout.astro";
 ---
 
 <html lang="en">
@@ -18,545 +16,527 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/png" href="Daniyal.png" />
     <title>Daniyal Master</title>
   </head>
-  <body>
-    <div class="maincontainer">
-      <ScrollBlur />
-      <Navigation />
 
-      <section class="hero-section">
-        <section class="hero-content">
-          <div class="available-for-projects">
-            <div class="ping-container">
-              <span class="heartbeat"></span>
-              <span class="dot"></span>
-            </div>
+  <BaseLayout>
+    <section class="hero-content">
+      <div class="available-for-projects">
+        <div class="ping-container">
+          <span class="heartbeat"></span>
+          <span class="dot"></span>
+        </div>
 
-            <p class="available-for-projects-description">
-              Available for projects
-            </p>
+        <p class="available-for-projects-description">Available for projects</p>
+      </div>
+
+      <h1 class="hero-title">Hi, I'm Daniyal.</h1>
+      <p class="hero-description">
+        I'm a high school student, web developer, and aspiring full-stack
+        engineer, primarily working within the JavaScript ecosystem.
+      </p>
+
+      <p class="hero-description">
+        I'm captivated by the challenge of building and finding solutions to
+        problems, and passionate about creating products to help myself and
+        others. Currently developing a Raycast sports extension.
+      </p>
+
+      <div class="about-labels-container">
+        <div class="location-container">
+          <div class="label-container">
+            <svg
+              class="label-icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 256 256"
+              class="size-4"
+              ><path
+                fill="currentColor"
+                d="M128 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.17 83.41 134.55a8 8 0 0 0 9.18 0C136 236.17 216 179.3 216 104a88.1 88.1 0 0 0-88-88m0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32"
+              ></path></svg
+            >
+            <p class="label-text">Ontario, Canada</p>
           </div>
+        </div>
 
-          <h1 class="hero-title">Hi, I'm Daniyal.</h1>
-          <p class="hero-description">
-            I'm a high school student, web developer, and aspiring full-stack
-            engineer, primarily working within the JavaScript ecosystem.
-          </p>
-
-          <p class="hero-description">
-            I'm captivated by the challenge of building and finding solutions to
-            problems, and passionate about creating products to help myself and
-            others. Currently developing a Raycast sports extension.
-          </p>
-
-          <div class="about-labels-container">
-            <div class="location-container">
-              <div class="label-container">
+        <a
+          class="monkey-type-link"
+          href="https://monkeytype.com/profile/daniyalmaster_"
+          target="_blank"
+          aria-label="Daniyal Master's Monkey Type Profile Stats"
+        >
+          <div class="typing-speed-container">
+            <div class="label-container">
+              <div class="speed">
                 <svg
-                  class="label-icon"
+                  class="typing-icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  class="size-4"
+                  ><path
+                    fill="currentColor"
+                    d="M20 14.4a.8.8 0 1 1 0 1.6a.8.8 0 0 1 0-1.6m-11.2 0h4.8a.8.8 0 1 1 0 1.6H8.8a.8.8 0 1 1 0-1.6M7.2 9.6a.8.8 0 0 1 .8.8V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 0 1 .8-.8m-3.999.759A2.4 2.4 0 0 1 7.2 8.612a2.4 2.4 0 0 1 4 1.788V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 1 0-1.6 0V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 1 0-1.6 0V12a.8.8 0 1 1-1.6 0v-1.6zM17.6 12.8v2.4a.8.8 0 1 1-1.6 0v-2.4h-2.306c-.493 0-.894-.358-.894-.8s.401-.8.894-.8h6.212c.493 0 .894.358.894.8s-.401.8-.894.8zM16.8 8H20a.8.8 0 1 1 0 1.6h-3.2a.8.8 0 1 1 0-1.6M4 14.4h1.6a.8.8 0 1 1 0 1.6H4a.8.8 0 1 1 0-1.6M13.2 8h.4a.8.8 0 1 1 0 1.6h-.4a.8.8 0 1 1 0-1.6M1.6 14.4H0V8.8c0-2.208 1.792-4 4-4h16c2.208 0 4 1.792 4 4v6.4c0 2.208-1.792 4-4 4H4c-2.208 0-4-1.792-4-4v-1.6h1.6v1.6A2.4 2.4 0 0 0 4 17.6h16a2.4 2.4 0 0 0 2.4-2.4V8.8A2.4 2.4 0 0 0 20 6.4H4a2.4 2.4 0 0 0-2.4 2.4z"
+                  ></path></svg
+                >
+                <p class="label-text">108 WPM</p>
+              </div>
+
+              <div class="accuracy">
+                <svg
+                  class="typing-icon"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
                   height="1em"
                   viewBox="0 0 256 256"
-                  class="size-4"
+                  class="size-4 text-slate-500 group-hover:text-slate-300"
                   ><path
                     fill="currentColor"
-                    d="M128 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.17 83.41 134.55a8 8 0 0 0 9.18 0C136 236.17 216 179.3 216 104a88.1 88.1 0 0 0-88-88m0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32"
+                    d="M221.87 83.16A104.1 104.1 0 1 1 195.67 49l22.67-22.68a8 8 0 0 1 11.32 11.32l-96 96a8 8 0 0 1-11.32-11.32l27.72-27.72a40 40 0 1 0 17.87 31.09a8 8 0 1 1 16-.9a56 56 0 1 1-22.38-41.65l22.75-22.75a87.88 87.88 0 1 0 23.13 29.67a8 8 0 0 1 14.44-6.9"
                   ></path></svg
                 >
-                <p class="label-text">Ontario, Canada</p>
+
+                <p class="label-text">96% ACC</p>
               </div>
             </div>
-
-            <a
-              class="monkey-type-link"
-              href="https://monkeytype.com/profile/daniyalmaster_"
-              target="_blank"
-              aria-label="Daniyal Master's Monkey Type Profile Stats"
-            >
-              <div class="typing-speed-container">
-                <div class="label-container">
-                  <div class="speed">
-                    <svg
-                      class="typing-icon"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 24 24"
-                      class="size-4"
-                      ><path
-                        fill="currentColor"
-                        d="M20 14.4a.8.8 0 1 1 0 1.6a.8.8 0 0 1 0-1.6m-11.2 0h4.8a.8.8 0 1 1 0 1.6H8.8a.8.8 0 1 1 0-1.6M7.2 9.6a.8.8 0 0 1 .8.8V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 0 1 .8-.8m-3.999.759A2.4 2.4 0 0 1 7.2 8.612a2.4 2.4 0 0 1 4 1.788V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 1 0-1.6 0V12a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 1 0-1.6 0V12a.8.8 0 1 1-1.6 0v-1.6zM17.6 12.8v2.4a.8.8 0 1 1-1.6 0v-2.4h-2.306c-.493 0-.894-.358-.894-.8s.401-.8.894-.8h6.212c.493 0 .894.358.894.8s-.401.8-.894.8zM16.8 8H20a.8.8 0 1 1 0 1.6h-3.2a.8.8 0 1 1 0-1.6M4 14.4h1.6a.8.8 0 1 1 0 1.6H4a.8.8 0 1 1 0-1.6M13.2 8h.4a.8.8 0 1 1 0 1.6h-.4a.8.8 0 1 1 0-1.6M1.6 14.4H0V8.8c0-2.208 1.792-4 4-4h16c2.208 0 4 1.792 4 4v6.4c0 2.208-1.792 4-4 4H4c-2.208 0-4-1.792-4-4v-1.6h1.6v1.6A2.4 2.4 0 0 0 4 17.6h16a2.4 2.4 0 0 0 2.4-2.4V8.8A2.4 2.4 0 0 0 20 6.4H4a2.4 2.4 0 0 0-2.4 2.4z"
-                      ></path></svg
-                    >
-                    <p class="label-text">108 WPM</p>
-                  </div>
-
-                  <div class="accuracy">
-                    <svg
-                      class="typing-icon"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 256 256"
-                      class="size-4 text-slate-500 group-hover:text-slate-300"
-                      ><path
-                        fill="currentColor"
-                        d="M221.87 83.16A104.1 104.1 0 1 1 195.67 49l22.67-22.68a8 8 0 0 1 11.32 11.32l-96 96a8 8 0 0 1-11.32-11.32l27.72-27.72a40 40 0 1 0 17.87 31.09a8 8 0 1 1 16-.9a56 56 0 1 1-22.38-41.65l22.75-22.75a87.88 87.88 0 1 0 23.13 29.67a8 8 0 0 1 14.44-6.9"
-                      ></path></svg
-                    >
-
-                    <p class="label-text">96% ACC</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a
-              class="github-contributions"
-              href="https://github.com/daniyalmaster693?tab=overview&from=2025-01-01&to=2025-01-31"
-              target="_blank"
-              aria-label="Daniyal Master's Github Contributions"
-            >
-              <div class="github-container">
-                <div class="label-container">
-                  <svg
-                    class="label-icon"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    class="size-4"
-                    ><path
-                      fill="currentColor"
-                      d="M12 .297c-6.63 0-12 5.373-12 12c0 5.303 3.438 9.8 8.205 11.385c.6.113.82-.258.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729c1.205.084 1.838 1.236 1.838 1.236c1.07 1.835 2.809 1.305 3.495.998c.108-.776.417-1.305.76-1.605c-2.665-.3-5.466-1.332-5.466-5.93c0-1.31.465-2.38 1.235-3.22c-.135-.303-.54-1.523.105-3.176c0 0 1.005-.322 3.3 1.23c.96-.267 1.98-.399 3-.405c1.02.006 2.04.138 3 .405c2.28-1.552 3.285-1.23 3.285-1.23c.645 1.653.24 2.873.12 3.176c.765.84 1.23 1.91 1.23 3.22c0 4.61-2.805 5.625-5.475 5.92c.42.36.81 1.096.81 2.22c0 1.606-.015 2.896-.015 3.286c0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                    ></path></svg
-                  >
-                  <p class="label-text">578 Contributions</p>
-                </div>
-              </div>
-            </a>
           </div>
-        </section>
-      </section>
+        </a>
 
-      <section class="featured-projects-section">
-        <div class="featured-projects-top">
-          <h1 class="featured-projects-title">Featured Projects</h1>
-          <a
-            class="all-projects"
-            href="https://github.com/daniyalmaster693?tab=repositories"
-            target="_blank"
-          >
-            <p>
-              View all projects
-
+        <a
+          class="github-contributions"
+          href="https://github.com/daniyalmaster693?tab=overview&from=2025-01-01&to=2025-01-31"
+          target="_blank"
+          aria-label="Daniyal Master's Github Contributions"
+        >
+          <div class="github-container">
+            <div class="label-container">
               <svg
+                class="label-icon"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 16"
-                style="align-self:flex-end"
-                class="arrow"
-                ><path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6.25 3.75h6m0 0v6m0-6-8.5 8.5"></path></svg
-              >
-            </p>
-          </a>
-        </div>
-
-        <div class="featured-projects">
-          <a class="project-link" href="/projects/sportssync">
-            <div class="project">
-              <div class="project-content">
-                <p class="project-title">Sportssync</p>
-                <p class="project-description">
-                  View sports scores, news, and standings in Raycast
-                </p>
-              </div>
-
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="project-hr" />
-
-          <a class="project-link" href="project template">
-            <div class="project">
-              <div class="project-content">
-                <p class="project-title">Course Schedule to Google Calendar</p>
-                <p class="project-description">
-                  Convert your course schedule to Google Calendar
-                </p>
-              </div>
-
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="project-hr" />
-
-          <a class="project-link" href="project template">
-            <div class="project">
-              <div class="project-content">
-                <p class="project-title">Spotify Adblocker</p>
-                <p class="project-description">
-                  A simple script to block ads in Spotify on your Mac
-                </p>
-              </div>
-
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="project-hr" />
-
-          <a class="project-link" href="project template">
-            <div class="project">
-              <div class="project-content">
-                <p class="project-title">Calculator App</p>
-                <p class="project-description">
-                  A simple calculator app with a clean design and keyboard
-                  support
-                </p>
-              </div>
-
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="project-hr" />
-        </div>
-      </section>
-
-      <section class="blog-posts-section">
-        <div class="blog-section-top">
-          <h1 class="blog-section-title">Featured Blog Posts</h1>
-          <a class="all-posts" href="blogs">
-            <p>
-              View all posts <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 16"
-                style="align-self:flex-end"
-                class="arrow"
-                ><path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6.25 3.75h6m0 0v6m0-6-8.5 8.5"></path></svg
-              >
-            </p>
-          </a>
-        </div>
-
-        <div class="blog-posts">
-          <a class="post-link" href="/blogs/creating-my-portfolio-website">
-            <div class="post">
-              <div class="blog-content">
-                <h2 class="post-title">Creating my portfolio website</h2>
-
-                <div class="published-date">
-                  <p class="published">2024-05-24</p>
-                </div>
-              </div>
-
-              <div class="read-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="blog-hr" />
-
-          <a
-            class="post-link"
-            href="/blogs/how-i-use-an-android-phone-with-a-mac"
-          >
-            <div class="post">
-              <div class="blog-content">
-                <h2 class="post-title">
-                  How I use an Android phone with a Mac
-                </h2>
-
-                <div class="published-date">
-                  <p class="published">2024-05-24</p>
-                </div>
-              </div>
-
-              <div class="read-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="blog-hr" />
-
-          <a class="post-link" href="/blogs/my-raycast-setup">
-            <div class="post">
-              <div class="blog-content">
-                <h2 class="post-title">My Raycast Setup</h2>
-
-                <div class="published-date">
-                  <p class="published">2024-05-24</p>
-                </div>
-              </div>
-
-              <div class="read-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="blog-hr" />
-
-          <a class="post-link" href="/blogs/my-mac-setup">
-            <div class="post">
-              <div class="blog-content">
-                <h2 class="post-title">My Mac Setup</h2>
-
-                <div class="published-date">
-                  <p class="published">2024-05-24</p>
-                </div>
-              </div>
-
-              <div class="read-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="connect-with-me">
-        <div class="connect-with-me-top">
-          <h2 class="connect-with-me-title">Connect</h2>
-          <p class="connect-with-me-description">
-            Reach out using social media or send me an email to get in touch.
-          </p>
-        </div>
-
-        <div class="social-media-links">
-          <div class="github">
-            <a
-              href="https://github.com/daniyalmaster693"
-              target="_blank"
-              aria-label="Daniyal Master's Github Profile"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="1em"
+                height="1em"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="#a6a6a6"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-github"
+                class="size-4"
                 ><path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  fill="currentColor"
+                  d="M12 .297c-6.63 0-12 5.373-12 12c0 5.303 3.438 9.8 8.205 11.385c.6.113.82-.258.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729c1.205.084 1.838 1.236 1.838 1.236c1.07 1.835 2.809 1.305 3.495.998c.108-.776.417-1.305.76-1.605c-2.665-.3-5.466-1.332-5.466-5.93c0-1.31.465-2.38 1.235-3.22c-.135-.303-.54-1.523.105-3.176c0 0 1.005-.322 3.3 1.23c.96-.267 1.98-.399 3-.405c1.02.006 2.04.138 3 .405c2.28-1.552 3.285-1.23 3.285-1.23c.645 1.653.24 2.873.12 3.176c.765.84 1.23 1.91 1.23 3.22c0 4.61-2.805 5.625-5.475 5.92c.42.36.81 1.096.81 2.22c0 1.606-.015 2.896-.015 3.286c0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
                 ></path></svg
               >
-            </a>
+              <p class="label-text">578 Contributions</p>
+            </div>
           </div>
+        </a>
+      </div>
+    </section>
 
-          <div class="codepen">
-            <a
-              href="https://codepen.io/daniyalmaster693"
-              target="_blank"
-              aria-label="Daniyal Master's Codepen Profile"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#a6a6a6"
-                stroke-width="2"
+    <section class="featured-projects-section">
+      <div class="featured-projects-top">
+        <h1 class="featured-projects-title">Featured Projects</h1>
+        <a
+          class="all-projects"
+          href="https://github.com/daniyalmaster693?tab=repositories"
+          target="_blank"
+        >
+          <p>
+            View all projects
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 16"
+              style="align-self:flex-end"
+              class="arrow"
+              ><path
+                stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-codepen"
-              >
-                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
-                ></polygon>
-                <line x1="12" y1="22" x2="12" y2="15.5"></line>
-                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
-                <line x1="12" y1="2" x2="12" y2="8.5"></line>
-              </svg>
-            </a>
-          </div>
-
-          <div class="linkedin">
-            <a
-              href="https://www.linkedin.com/in/daniyal-master-841925319/"
-              target="_blank"
-              aria-label="Daniyal Master's Linkedin Profile"
+                stroke-width="2"
+                d="M6.25 3.75h6m0 0v6m0-6-8.5 8.5"></path></svg
             >
+          </p>
+        </a>
+      </div>
+
+      <div class="featured-projects">
+        <a class="project-link" href="/projects/sportssync">
+          <div class="project">
+            <div class="project-content">
+              <p class="project-title">Sportssync</p>
+              <p class="project-description">
+                View sports scores, news, and standings in Raycast
+              </p>
+            </div>
+
+            <div class="learn-more">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
                 fill="none"
-                stroke="#a6a6a6"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-linkedin"
+                viewBox="0 0 16 16"
+                class="arrow"
                 ><path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                ></path><rect x="2" y="9" width="4" height="12"></rect><circle
-                  cx="4"
-                  cy="4"
-                  r="2"></circle></svg
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
               >
-            </a>
+            </div>
           </div>
+        </a>
 
-          <div class="email">
-            <a
-              href="mailto:daniyalmaster693@gmail.com"
-              target="_blank"
-              aria-label="Daniyal Master's Email"
-            >
+        <hr class="project-hr" />
+
+        <a class="project-link" href="project template">
+          <div class="project">
+            <div class="project-content">
+              <p class="project-title">Course Schedule to Google Calendar</p>
+              <p class="project-description">
+                Convert your course schedule to Google Calendar
+              </p>
+            </div>
+
+            <div class="learn-more">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
                 fill="none"
-                stroke="#a6a6a6"
-                stroke-width="2"
+                viewBox="0 0 16 16"
+                class="arrow"
+                ><path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
+              >
+            </div>
+          </div>
+        </a>
+
+        <hr class="project-hr" />
+
+        <a class="project-link" href="project template">
+          <div class="project">
+            <div class="project-content">
+              <p class="project-title">Spotify Adblocker</p>
+              <p class="project-description">
+                A simple script to block ads in Spotify on your Mac
+              </p>
+            </div>
+
+            <div class="learn-more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 16"
+                class="arrow"
+                ><path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
+              >
+            </div>
+          </div>
+        </a>
+
+        <hr class="project-hr" />
+
+        <a class="project-link" href="project template">
+          <div class="project">
+            <div class="project-content">
+              <p class="project-title">Calculator App</p>
+              <p class="project-description">
+                A simple calculator app with a clean design and keyboard support
+              </p>
+            </div>
+
+            <div class="learn-more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 16"
+                class="arrow"
+                ><path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
+              >
+            </div>
+          </div>
+        </a>
+
+        <hr class="project-hr" />
+      </div>
+    </section>
+
+    <section class="blog-posts-section">
+      <div class="blog-section-top">
+        <h1 class="blog-section-title">Featured Blog Posts</h1>
+        <a class="all-posts" href="blogs">
+          <p>
+            View all posts <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 16"
+              style="align-self:flex-end"
+              class="arrow"
+              ><path
+                stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-mail"
+                stroke-width="2"
+                d="M6.25 3.75h6m0 0v6m0-6-8.5 8.5"></path></svg
+            >
+          </p>
+        </a>
+      </div>
+
+      <div class="blog-posts">
+        <a class="post-link" href="/blogs/creating-my-portfolio-website">
+          <div class="post">
+            <div class="blog-content">
+              <h2 class="post-title">Creating my portfolio website</h2>
+
+              <div class="published-date">
+                <p class="published">2024-05-24</p>
+              </div>
+            </div>
+
+            <div class="read-more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 16"
+                class="arrow"
                 ><path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                ></path><polyline points="22,6 12,13 2,6"></polyline></svg
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
               >
-            </a>
+            </div>
           </div>
+        </a>
+
+        <hr class="blog-hr" />
+
+        <a
+          class="post-link"
+          href="/blogs/how-i-use-an-android-phone-with-a-mac"
+        >
+          <div class="post">
+            <div class="blog-content">
+              <h2 class="post-title">How I use an Android phone with a Mac</h2>
+
+              <div class="published-date">
+                <p class="published">2024-05-24</p>
+              </div>
+            </div>
+
+            <div class="read-more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 16"
+                class="arrow"
+                ><path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
+              >
+            </div>
+          </div>
+        </a>
+
+        <hr class="blog-hr" />
+
+        <a class="post-link" href="/blogs/my-raycast-setup">
+          <div class="post">
+            <div class="blog-content">
+              <h2 class="post-title">My Raycast Setup</h2>
+
+              <div class="published-date">
+                <p class="published">2024-05-24</p>
+              </div>
+            </div>
+
+            <div class="read-more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 16"
+                class="arrow"
+                ><path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
+              >
+            </div>
+          </div>
+        </a>
+
+        <hr class="blog-hr" />
+
+        <a class="post-link" href="/blogs/my-mac-setup">
+          <div class="post">
+            <div class="blog-content">
+              <h2 class="post-title">My Mac Setup</h2>
+
+              <div class="published-date">
+                <p class="published">2024-05-24</p>
+              </div>
+            </div>
+
+            <div class="read-more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 16"
+                class="arrow"
+                ><path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path></svg
+              >
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="connect-with-me">
+      <div class="connect-with-me-top">
+        <h2 class="connect-with-me-title">Connect</h2>
+        <p class="connect-with-me-description">
+          Reach out using social media or send me an email to get in touch.
+        </p>
+      </div>
+
+      <div class="social-media-links">
+        <div class="github">
+          <a
+            href="https://github.com/daniyalmaster693"
+            target="_blank"
+            aria-label="Daniyal Master's Github Profile"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-github"
+              ><path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path></svg
+            >
+          </a>
         </div>
 
-        <div class="email-copy">
-          <button
-            class="copy-email"
-            value="daniyalmaster693@gmail.com"
-            onclick="(() => {
+        <div class="codepen">
+          <a
+            href="https://codepen.io/daniyalmaster693"
+            target="_blank"
+            aria-label="Daniyal Master's Codepen Profile"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-codepen"
+            >
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+              ></polygon>
+              <line x1="12" y1="22" x2="12" y2="15.5"></line>
+              <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+              <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+              <line x1="12" y1="2" x2="12" y2="8.5"></line>
+            </svg>
+          </a>
+        </div>
+
+        <div class="linkedin">
+          <a
+            href="https://www.linkedin.com/in/daniyal-master-841925319/"
+            target="_blank"
+            aria-label="Daniyal Master's Linkedin Profile"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-linkedin"
+              ><path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path><rect x="2" y="9" width="4" height="12"></rect><circle
+                cx="4"
+                cy="4"
+                r="2"></circle></svg
+            >
+          </a>
+        </div>
+
+        <div class="email">
+          <a
+            href="mailto:daniyalmaster693@gmail.com"
+            target="_blank"
+            aria-label="Daniyal Master's Email"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#a6a6a6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-mail"
+              ><path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path><polyline points="22,6 12,13 2,6"></polyline></svg
+            >
+          </a>
+        </div>
+      </div>
+
+      <div class="email-copy">
+        <button
+          class="copy-email"
+          value="daniyalmaster693@gmail.com"
+          onclick="(() => {
           const email = document.querySelector('.copy-email').value;
           navigator.clipboard.writeText (email);
           const copiedMessage = document.querySelector('.copied-message');
@@ -564,28 +544,25 @@ import Footer from "../components/Footer.astro";
           setTimeout(() => {
             copiedMessage.style.display = 'none';}, 
             3000);})()"
+        >
+          daniyalmaster693@gmail.com
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon-sm"
+            ><path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z"
+              fill="currentColor"></path></svg
           >
-            daniyalmaster693@gmail.com
-            <svg
-              width="19"
-              height="19"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon-sm"
-              ><path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z"
-                fill="currentColor"></path></svg
-            >
-          </button>
-        </div>
+        </button>
+      </div>
 
-        <div class="copied-message">Copied to clipboard!</div>
-      </section>
-
-      <Footer />
-    </div>
-  </body>
+      <div class="copied-message">Copied to clipboard!</div>
+    </section>
+  </BaseLayout>
 </html>

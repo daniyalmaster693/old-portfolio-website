@@ -67,10 +67,7 @@
   text-decoration: none;
 }
 
-.project-1,
-.project-2,
-.project-3,
-.project-4 {
+.project {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,24 +75,12 @@
   height: 85px;
   padding: 0 1.75em 0 1.75em;
   gap: 30px;
+  cursor: pointer;
   border-radius: 1rem;
   transition: var(--ease-in-out);
 }
 
-.project-1 {
-  cursor: pointer;
-}
-
-.project-2,
-.project-3,
-.project-4 {
-  cursor: not-allowed;
-}
-
-.project-1:hover,
-.project-2:hover,
-.project-3:hover,
-.project-4:hover {
+.project:hover {
   background-color: var(--hover-black);
 }
 

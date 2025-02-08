@@ -1,0 +1,47 @@
+---
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import ScrollBlur from "../components/Scroll Blur.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Daniyal Master" />
+    <link rel="icon" type="image/png" href="Daniyal.png" />
+    <title>Daniyal Master</title>
+  </head>
+
+  <body>
+    <div class="maincontainer">
+      <ScrollBlur />
+      <Navigation />
+
+      <section class="layout-wrapper">
+        <slot />
+      </section>
+
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<style>
+  .maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+</style>

@@ -20,42 +20,42 @@ const { frontmatter } = Astro.props;
     <div class="maincontainer">
       <ScrollBlur />
       <ScrollProgress />
-      <Navigation transition:persist />
+      <Navigation />
 
-      <section class="post-section">
-        <div class="blog-top">
-          <a class="all-posts" href="/blogs">
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 16"
-                class="arrow"
-              >
-                <g transform="scale(-1,1) translate(-16,0)">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path>
-                </g>
-              </svg>
+      <section class="project-section">
+        <section class="project-top-section">
+          <div class="project-top">
+            <a class="all-projects" href="/projects">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                  class="arrow"
+                >
+                  <g transform="scale(-1,1) translate(-16,0)">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"></path>
+                  </g>
+                </svg> View more projects
+              </p>
+            </a>
 
-              View all posts
-            </p>
-          </a>
+            <h1>{frontmatter.title}</h1>
+          </div>
 
-          <h1>{frontmatter.title}</h1>
-        </div>
+          <div class="project-information">
+            <p><span>Published:</span> {frontmatter.date}</p>
+            <p><span>Created by:</span> {frontmatter.creator}</p>
+            <hr class="project-hr" />
+          </div>
+        </section>
 
-        <div class="post-information">
-          <p><span>Published:</span> {frontmatter.pubDate}</p>
-          <p>{frontmatter.readingTime}</p>
-          <hr class="post-hr" />
-        </div>
-
-        <section class="blog-content">
+        <section class="project-content">
           <slot />
         </section>
       </section>
@@ -69,24 +69,27 @@ const { frontmatter } = Astro.props;
   .maincontainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .post-section {
     width: 100%;
     margin-top: 90px;
-    animation: var(--fadeIn);
   }
 
-  .blog-top {
+  .project-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .blog-top h1 {
+  .project-top h1 {
     color: var(--purple);
     font-size: 2rem;
     font-family: var(--Inter);
@@ -95,14 +98,14 @@ const { frontmatter } = Astro.props;
     width: 600px;
   }
 
-  .post-hr {
+  .project-hr {
     width: 37.5rem;
     border: var(--hr);
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
 
-  .post-information {
+  .project-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,11 +113,11 @@ const { frontmatter } = Astro.props;
     margin-top: 2rem;
   }
 
-  .all-posts {
+  .all-projects {
     text-decoration: none;
   }
 
-  .all-posts p {
+  .all-projects p {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -134,8 +137,8 @@ const { frontmatter } = Astro.props;
     color: var(--primary-grey);
   }
 
-  .blog-top p,
-  .post-information p {
+  .project-top p,
+  .project-information p {
     color: var(--secondary-grey);
     font-size: 16px;
     font-family: var(--Inter);
@@ -146,17 +149,17 @@ const { frontmatter } = Astro.props;
     text-align: left;
   }
 
-  .blog-top p {
+  .project-top p {
     cursor: pointer;
     margin-bottom: 4rem;
     transition: var(--ease-in-out);
   }
 
-  .blog-top p:hover {
+  .project-top p:hover {
     color: var(--primary-grey);
   }
 
-  .post-information p {
+  .project-information p {
     margin-top: 0.75rem;
   }
 
@@ -164,15 +167,15 @@ const { frontmatter } = Astro.props;
     color: var(--primary-grey);
   }
 
-  .blog-content {
+  .project-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    max-width: 600px;
   }
 
-  .blog-content :global(h2) {
+  .project-content :global(h2) {
     color: var(--primary-grey);
     font-family: var(--Inter);
     font-size: 1.35rem;
@@ -183,7 +186,10 @@ const { frontmatter } = Astro.props;
     margin-top: 3rem;
   }
 
-  .blog-content :global(p) {
+  .project-content :global(p),
+  .project-content :global(em),
+  .project-content :global(li),
+  .project-content :global(a) {
     color: var(--secondary-grey);
     font-size: 1rem;
     font-family: var(--Inter);
@@ -191,8 +197,33 @@ const { frontmatter } = Astro.props;
     line-height: 1.75rem;
     letter-spacing: 0.023rem;
     width: 600px;
+    text-align: left;
+  }
+
+  .project-content :global(p),
+  .project-content :global(em) {
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
-    text-align: left;
+  }
+
+  .project-content :global(em) {
+    font-style: italic;
+  }
+
+  .project-content :global(ul) {
+    padding-inline-start: 0.925rem;
+  }
+
+  .project-content :global(li) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-content :global(li::marker) {
+    color: var(--purple);
+  }
+
+  .project-content :global(li:nth-child(1)) {
+    margin-top: 1.75rem;
   }
 </style>

@@ -16,8 +16,8 @@
   --border-hover-color: #2c2d2e;
   --box-shadow: rgb(255 255 255 / 20%) 0px 2px 20px;
   --hr: 1px solid #27272a;
-  --fadeInDuration: 1.75s;
-  --fadeOutDuration: 1.5s;
+  /* --fadeInDuration: 1.75s; */
+  /* --fadeOutDuration: 1.5s; */
   --ease-in-out: all 0.3s ease-in-out;
   --scale-in-out: scale(1.01);
 }
@@ -34,7 +34,7 @@
   font: inherit;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -78,15 +78,15 @@
     opacity: 0;
     transform: translateY(10px);
   }
-}
+} */
 
-body.fade-out {
+/* body.fade-out {
   animation: fadeOut var(--fadeOutDuration) forwards;
-}
+} */
 
 body {
   min-height: 100vh;
   background-color: var(--primary-black);
-  opacity: 0;
-  animation: fadeIn var(--fadeInDuration) forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn var(--fadeInDuration) forwards; */
 }

@@ -1,9 +1,17 @@
 ---
 import "../styles/global.css";
 import "../styles/projects.css";
-import Navigation from "../components/Navigation.astro";
-import ScrollBlur from "../components/Scroll Blur.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/Base Layout.astro";
+
+const allProjects = Object.values(
+  import.meta.glob("./projects/*.md", { eager: true })
+);
+
+const sortedProjects = allProjects.sort((a, b) => {
+  const orderA = parseInt(a.frontmatter.order || "0", 10);
+  const orderB = parseInt(b.frontmatter.order || "0", 10);
+  return orderA - orderB; 
+});
 ---
 
 <html lang="en">
@@ -18,11 +26,8 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/png" href="Daniyal.png" />
     <title>Projects | Daniyal Master</title>
   </head>
-  <body>
-    <div class="maincontainer">
-      <ScrollBlur />
-      <Navigation />
 
+  <BaseLayout>
       <section class="featured-projects-section">
         <div class="featured-projects-top">
           <h1 class="featured-projects-title">Featured Projects</h1>
@@ -50,120 +55,44 @@ import Footer from "../components/Footer.astro";
         </div>
 
         <div class="featured-projects">
-          <a class="project-link" href="/projects/sportssync">
-            <div class="project-1">
-              <div class="project-content">
-                <p class="project-title">Sportssync</p>
-                <p class="project-description">
-                  View sports scores, news, and standings in Raycast
-                </p>
-              </div>
+          {
+            sortedProjects.map((project, index) => (
+              <div key={project.url}>
+                <a class="project-link" href={project.url}>
+                  <div class="project">
+                    <div class="project-content">
+                      <h2 class="project-title">{project.frontmatter.title}</h2>
+                      <p class="project-description">
+                        {project.frontmatter.description}
+                      </p>
+                    </div>
 
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
+                    <div class="learn-more">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                        class="arrow"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                </a>
 
-          <hr class="project-hr" />
-
-          <a class="project-link">
-            <div class="project-2">
-              <div class="project-content">
-                <p class="project-title">Course Schedule to Google Calendar</p>
-                <p class="project-description">
-                  Convert your course schedule to Google Calendar
-                </p>
-              </div>
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
-
-          <hr class="project-hr" />
-
-          <div class="project-link">
-            <div class="project-3">
-              <div class="project-content">
-                <p class="project-title">Spotify Adblocker</p>
-                <p class="project-description">
-                  A simple script to block ads in Spotify on your Mac
-                </p>
-              </div>
-
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </div>
-
-          <hr class="project-hr" />
-
-          <a class="project-link">
-            <div class="project-4">
-              <div class="project-content">
-                <p class="project-title">Add Project Title</p>
-                <p class="project-description">Add project description</p>
-              </div>
-
-              <div class="learn-more">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 16"
-                  class="arrow"
-                  ><path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                  ></path></svg
-                >
-              </div>
-            </div>
-          </a>
+                {index !== sortedProjects.length - 1 && (
+                  <hr class="project-hr" />
+                )}
+            ))
+          }
         </div>
-
-        <Footer />
       </section>
-    </div>
   </body>
 </html>
