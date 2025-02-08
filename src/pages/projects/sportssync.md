@@ -8,7 +8,7 @@ creator: "Daniyal Master"
 order: "0"
 ---
 
-<img src="../../../public/sportssync%202025-01-12%20at%2018.05.40.png" alt="Sportssync Screenshot" style="width: 600px; height: 350px; border-radius: 1.2rem; margin-bottom: 3rem;">
+<img src="/sportssync 2025-01-12 at 18.05.40.png" alt="Sportssync Screenshot" style="width: 600px; height: 350px; border-radius: 1.2rem; margin-bottom: 3rem;">
 
 ## Overview
 
