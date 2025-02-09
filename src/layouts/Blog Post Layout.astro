@@ -185,6 +185,14 @@ const { frontmatter } = Astro.props;
     flex-wrap: wrap;
   }
 
+  .blog-content :global(img) {
+    width: 600px;
+    height: 350px;
+    border-radius: 1.2rem;
+    margin-bottom: 3rem;
+    object-fit: cover;
+  }
+
   .blog-content :global(h2) {
     color: var(--primary-grey);
     font-family: var(--Inter);
