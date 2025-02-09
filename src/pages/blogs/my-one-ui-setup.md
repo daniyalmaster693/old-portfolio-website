@@ -3,7 +3,7 @@ layout: ../../layouts/Blog Post Layout.astro
 pageTitle: "My One UI Setup"
 title: "My One UI Setup"
 pubDate: "2025-01-21"
-readingTime: "5 Min Read"
+readingTime: "5 Min"
 ---
 
 ## Aliquip qui consequat nulla voluptate

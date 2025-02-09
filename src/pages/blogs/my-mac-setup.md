@@ -3,7 +3,7 @@ layout: ../../layouts/Blog Post Layout.astro
 pageTitle: "My Mac Setup"
 title: "My Mac Setup"
 pubDate: "2025-01-22"
-readingTime: "5 Min Read"
+readingTime: "5 Min"
 ---
 
 ## Aliquip qui consequat nulla voluptate

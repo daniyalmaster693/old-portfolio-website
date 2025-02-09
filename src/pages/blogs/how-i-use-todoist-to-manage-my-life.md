@@ -3,7 +3,7 @@ layout: ../../layouts/Blog Post Layout.astro
 pageTitle: "How I use Todoist to Manage my life"
 title: "How I use Todoist to manage my life"
 pubDate: "2025-01-23"
-readingTime: "5 Min Read"
+readingTime: "5 Min"
 ---
 
 ## Aliquip qui consequat nulla voluptate

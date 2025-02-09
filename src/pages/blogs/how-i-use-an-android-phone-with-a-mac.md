@@ -3,7 +3,7 @@ layout: ../../layouts/Blog Post Layout.astro
 pageTitle: "How I use an Android phone with a Mac"
 title: "How I use an Android Phone with a Mac"
 pubDate: "2025-01-24"
-readingTime: "5 Min Read"
+readingTime: "5 Min"
 ---
 
 ## Aliquip qui consequat nulla voluptate

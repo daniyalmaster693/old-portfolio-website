@@ -3,7 +3,7 @@ layout: ../../layouts/Blog Post Layout.astro
 pageTitle: "My Raycast Setup"
 title: "My Raycast Setup"
 pubDate: "2025-01-20"
-readingTime: "5 Min Read"
+readingTime: "5 Min"
 ---
 
 ## Aliquip qui consequat nulla voluptate

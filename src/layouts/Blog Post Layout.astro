@@ -63,7 +63,7 @@ const { frontmatter } = Astro.props;
 
         <div class="post-information">
           <p><span>Published:</span> {frontmatter.pubDate}</p>
-          <p>{frontmatter.readingTime}</p>
+          <p><span>Reading Time:</span> {frontmatter.readingTime}</p>
           <hr class="post-hr" />
         </div>
 
@@ -196,7 +196,10 @@ const { frontmatter } = Astro.props;
     margin-top: 3rem;
   }
 
-  .blog-content :global(p) {
+  .blog-content :global(p),
+  .blog-content :global(em),
+  .blog-content :global(li),
+  .blog-content :global(a) {
     color: var(--secondary-grey);
     font-size: 1rem;
     font-family: var(--Inter);
@@ -204,8 +207,33 @@ const { frontmatter } = Astro.props;
     line-height: 1.75rem;
     letter-spacing: 0.023rem;
     width: 600px;
+    text-align: left;
+  }
+
+  .blog-content :global(p),
+  .blog-content :global(em) {
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
-    text-align: left;
+  }
+
+  .blog-content :global(em) {
+    font-style: italic;
+  }
+
+  .blog-content :global(ul) {
+    padding-inline-start: 0.925rem;
+  }
+
+  .blog-content :global(li) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-content :global(li::marker) {
+    color: var(--purple);
+  }
+
+  .blog-content :global(li:nth-child(1)) {
+    margin-top: 1.75rem;
   }
 </style>
