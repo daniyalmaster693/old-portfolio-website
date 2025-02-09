@@ -12,7 +12,7 @@
   align-items: center;
   margin-top: 150px;
   width: 100%;
-  animation: var(--fadeIn);
+  animation: fadeIn var(--fadeInDuration) forwards;
 }
 
 .featured-projects {

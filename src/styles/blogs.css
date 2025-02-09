@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.grid-wrapper {
+  animation: fadeIn var(--fadeInDuration) forwards;
+}
+
 .blog-posts-section {
   display: flex;
   flex-direction: column;
@@ -13,7 +17,6 @@
   width: 100%;
   margin-top: 150px;
   overflow: hidden;
-  animation: var(--fadeIn);
 }
 
 .blog-posts {
