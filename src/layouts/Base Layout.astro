@@ -58,4 +58,10 @@ import Footer from "../components/Footer.astro";
     opacity: 0;
     animation: fadeIn var(--fadeInDuration) forwards;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .layout-wrapper {
+      opacity: 1;
+    }
+  }
 </style>

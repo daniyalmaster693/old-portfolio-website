@@ -244,4 +244,10 @@ const { frontmatter } = Astro.props;
   .blog-content :global(li:nth-child(1)) {
     margin-top: 1.75rem;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .post-section {
+      opacity: 1;
+    }
+  }
 </style>

@@ -80,6 +80,14 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   min-height: 100vh;
   background-color: var(--primary-black);

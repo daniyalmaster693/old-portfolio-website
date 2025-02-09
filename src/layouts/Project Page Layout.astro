@@ -248,4 +248,10 @@ const { frontmatter } = Astro.props;
   .project-content :global(li:nth-child(1)) {
     margin-top: 1.75rem;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .project-section {
+      opacity: 1;
+    }
+  }
 </style>

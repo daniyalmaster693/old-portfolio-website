@@ -390,3 +390,13 @@
     opacity: 0;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .dot {
+    filter: none;
+  }
+
+  .heartbeat {
+    background-color: transparent;
+  }
+}
