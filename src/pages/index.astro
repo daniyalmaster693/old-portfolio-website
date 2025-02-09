@@ -577,10 +577,17 @@ import BaseLayout from "../layouts/Base Layout.astro";
     const accElement = document.querySelector(".acc-label-text");
     const gitElement = document.querySelector(".github-label-text");
 
-    setTimeout(() => {
-      animateCounter(wpmElement, 108, 3000);
-      animateCounter(accElement, 93, 3000);
-      animateCounter(gitElement, 604, 3000);
-    }, 200);
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (!prefersReducedMotion) {
+      setTimeout(() => {
+        animateCounter(wpmElement, 108, 3000);
+        animateCounter(accElement, 93, 3000);
+        animateCounter(gitElement, 604, 3000);
+      }, 200);
+    } else {
+    }
   });
 </script>
