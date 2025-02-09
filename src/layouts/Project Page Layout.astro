@@ -137,7 +137,8 @@ const { frontmatter } = Astro.props;
     gap: 5px;
   }
 
-  .arrow {
+  .arrow,
+  :global(.arrow) {
     color: var(--secondary-grey);
     height: 16px;
     width: 16px;
@@ -147,7 +148,8 @@ const { frontmatter } = Astro.props;
     transition: var(--ease-in-out);
   }
 
-  .arrow:hover {
+  .arrow:hover,
+  :global(.arrow:hover) {
     color: var(--primary-grey);
   }
 
@@ -247,6 +249,15 @@ const { frontmatter } = Astro.props;
 
   .project-content :global(li:nth-child(1)) {
     margin-top: 1.75rem;
+  }
+
+  .project-content :global(a) {
+    transition: var(--ease-in-out);
+    text-decoration: none;
+  }
+
+  .project-content :global(a:hover) {
+    color: var(--primary-grey);
   }
 
   @media (prefers-reduced-motion: reduce) {

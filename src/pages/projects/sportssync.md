@@ -22,8 +22,8 @@ A raycast extension to view scores, standings, and news across your favorite spo
 
 ## Links
 
-- [Github Repository](https://github.com/daniyalmaster693/sportssync)
-- [Raycast Store](https://github.com/daniyalmaster693/sportssync)
+- <a href="https://github.com/daniyalmaster693/sportssync" aria-label="Sportssync Github Repository" target="_blank">Github Repository</a>
+- <a href="https://github.com/daniyalmaster693/sportssync" aria-label="Sportssync Raycast Store Page" target="_blank">Raycast Store</a>
 
 ## Commands
 
