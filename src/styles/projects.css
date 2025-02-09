@@ -9,9 +9,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 150px;
-  width: 100%;
+  max-width: 600px;
   animation: fadeIn var(--fadeInDuration) forwards;
 }
 
@@ -21,33 +21,33 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: 90px;
-  width: 655px;
+  max-width: 655px;
   gap: 10px;
 }
 
 .featured-projects-top {
-  width: 600px;
+  max-width: 600px;
 }
 
 .all-projects {
-  text-decoration: none;
-}
-
-.all-projects p {
   display: flex;
   align-items: center;
   gap: 5px;
+  text-decoration: none;
 }
 
 .featured-projects-title {
   color: var(--purple);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-family: var(--Inter);
   font-weight: 650;
   text-align: left;
 }
 
 .featured-projects-top p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: var(--secondary-grey);
   font-size: 16px;
   font-family: var(--Inter);
@@ -71,12 +71,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 600px;
-  height: 85px;
-  padding: 0 1.75em 0 1.75em;
-  gap: 30px;
   cursor: pointer;
+  width: 655px;
+  height: 85px;
+  gap: 30px;
   border-radius: 1rem;
+  padding: 1em 1.75em 1em 1.75em;
+  margin-left: -1.75rem;
   transition: var(--ease-in-out);
 }
 
