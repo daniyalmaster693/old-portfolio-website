@@ -1,9 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/projects.css";
-import Navigation from "../components/Navigation.astro";
-import ScrollBlur from "../components/Scroll Blur.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/Base Layout.astro";
 
 interface Frontmatter {
   order: string;
@@ -45,9 +43,7 @@ const sortedProjects = allProjects.sort((a: Project, b: Project) => {
     />
     <title>Projects | Daniyal Master</title>
   </head>
-  <div class="maincontainer">
-    <ScrollBlur />
-    <Navigation />
+    <BaseLayout> 
       <section class="featured-projects-section">
         <div class="featured-projects-top">
           <h1 class="featured-projects-title">Featured Projects</h1>
@@ -115,7 +111,6 @@ const sortedProjects = allProjects.sort((a: Project, b: Project) => {
 
   
       </section>
-      <Footer />
-      </div>
+    </BaseLayout>
   </body>
 </html>
