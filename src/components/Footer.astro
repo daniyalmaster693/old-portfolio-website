@@ -1,23 +1,50 @@
 <footer class="footer">
-  <p class="copyrights"></p>
+  <hr class="hr" />
+
+  <div class="footer-content">
+    <p class="last-updated">Last Updated:</p>
+    <p class="copyrights">© 2025 Daniyal Master</p>
+  </div>
 </footer>
 
 <style>
+  .hr {
+    color: var(--border-hover-color);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     max-width: 600px;
+    width: 100%;
     margin-top: 14rem;
     margin-bottom: 2rem;
   }
 
-  .copyrights {
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyrights,
+  .last-updated {
     color: var(--secondary-grey);
     font-size: 0.8125rem;
     font-family: var(--Inter);
     animation: var(--fadeIn);
+  }
+
+  .last-updated {
+    text-align: left;
+  }
+
+  .copyrights {
+    text-align: right;
   }
 </style>
 
@@ -25,6 +52,19 @@
   const d = new Date();
   let year = d.getFullYear();
 
+  const lastUpdate = new Date(document.lastModified);
+  const formattedDate = new Intl.DateTimeFormat(undefined, {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    timeZoneName: "short",
+  }).format(lastUpdate);
+
+  document.querySelector(".last-updated").textContent =
+    `Last Updated: ${formattedDate}`;
+
   const copyRight = document.querySelector(".copyrights");
-  copyRight.textContent = `© ${year} • Daniyal Master. All Rights Reserved.`;
+  copyRight.textContent = `© ${year} • Daniyal Master.`;
 </script>
