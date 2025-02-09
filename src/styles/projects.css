@@ -1,3 +1,10 @@
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .featured-projects-section {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
 import "../styles/blogs.css";
-import BaseLayout from "../layouts/Base Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import ScrollBlur from "../components/Scroll Blur.astro";
+import Footer from "../components/Footer.astro";
 
 const allPosts: Post[] = Object.values(
   import.meta.glob("./blogs/*.md", { eager: true })
@@ -37,52 +39,59 @@ const sortedPosts = allPosts.sort((a, b) => {
     <title>Blog | Daniyal Master</title>
   </head>
   <body>
-    <BaseLayout>
-      <section class="blog-posts-section">
-        <div class="blog-section-top">
-          <h1 class="blog-section-title">Blog Posts</h1>
-          <p class="blog-section-description">
-            I post developer and tech blogs every Friday
-          </p>
-        </div>
+    <div class="maincontainer">
+      <ScrollBlur />
+      <Navigation />
 
-        <div class="blog-posts">
-          {
-            sortedPosts.map((post, index) => (
-              <div>
-                <a class="post-link" href={post.url}>
-                  <div class="post">
-                    <div class="blog-content">
-                      <h2 class="post-title">{post.frontmatter.title}</h2>
-                      <div class="published-date">
-                        <p class="published">{post.frontmatter.pubDate}</p>
+      <div class="grid-wrapper">
+        <section class="blog-posts-section">
+          <div class="blog-section-top">
+            <h1 class="blog-section-title">Blog Posts</h1>
+            <p class="blog-section-description">
+              I post developer and tech blogs every Friday
+            </p>
+          </div>
+
+          <div class="blog-posts">
+            {
+              sortedPosts.map((post, index) => (
+                <div>
+                  <a class="post-link" href={post.url}>
+                    <div class="post">
+                      <div class="blog-content">
+                        <h2 class="post-title">{post.frontmatter.title}</h2>
+                        <div class="published-date">
+                          <p class="published">{post.frontmatter.pubDate}</p>
+                        </div>
+                      </div>
+                      <div class="read-more">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 16 16"
+                          class="arrow"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
+                          />
+                        </svg>
                       </div>
                     </div>
-                    <div class="read-more">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 16 16"
-                        class="arrow"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9.75 4.75 13.25 8m0 0-3.5 3.25M13.25 8H2.75"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </a>
+                  </a>
 
-                {index !== sortedPosts.length - 1 && <hr class="blog-hr" />}
-              </div>
-            ))
-          }
-        </div>
-      </section>
-    </BaseLayout>
+                  {index !== sortedPosts.length - 1 && <hr class="blog-hr" />}
+                </div>
+              ))
+            }
+          </div>
+        </section>
+      </div>
+
+      <Footer />
+    </div>
   </body>
 </html>
