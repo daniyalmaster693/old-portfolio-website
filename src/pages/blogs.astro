@@ -5,13 +5,23 @@ import Navigation from "../components/Navigation.astro";
 import ScrollBlur from "../components/Scroll Blur.astro";
 import Footer from "../components/Footer.astro";
 
-const allPosts = Object.values(
+const allPosts: Post[] = Object.values(
   import.meta.glob("./blogs/*.md", { eager: true })
 );
 
+interface Frontmatter {
+  pubDate: string;
+  title: string;
+}
+
+interface Post {
+  frontmatter: Frontmatter;
+  url: string;
+}
+
 const sortedPosts = allPosts.sort((a, b) => {
-  const dateA = new Date(a.frontmatter.pubDate);
-  const dateB = new Date(b.frontmatter.pubDate);
+  const dateA = new Date(a.frontmatter.pubDate).getTime();
+  const dateB = new Date(b.frontmatter.pubDate).getTime();
   return dateB - dateA;
 });
 ---
@@ -45,7 +55,7 @@ const sortedPosts = allPosts.sort((a, b) => {
           <div class="blog-posts">
             {
               sortedPosts.map((post, index) => (
-                <div key={post.url}>
+                <div>
                   <a class="post-link" href={post.url}>
                     <div class="post">
                       <div class="blog-content">

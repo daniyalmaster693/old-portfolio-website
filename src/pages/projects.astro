@@ -5,15 +5,27 @@ import Navigation from "../components/Navigation.astro";
 import ScrollBlur from "../components/Scroll Blur.astro";
 import Footer from "../components/Footer.astro";
 
-const allProjects = Object.values(
+interface Frontmatter {
+  order: string;
+  title: string;      
+  description: string;
+}
+
+interface Project {
+  frontmatter: Frontmatter;
+  url: string;
+}
+
+const allProjects: Project[] = Object.values(
   import.meta.glob("./projects/*.md", { eager: true })
 );
 
-const sortedProjects = allProjects.sort((a, b) => {
+const sortedProjects = allProjects.sort((a: Project, b: Project) => {
   const orderA = parseInt(a.frontmatter.order || "0", 10);
   const orderB = parseInt(b.frontmatter.order || "0", 10);
   return orderA - orderB; 
 });
+
 ---
 
 <html lang="en">
@@ -65,7 +77,7 @@ const sortedProjects = allProjects.sort((a, b) => {
         <div class="featured-projects">
           {
             sortedProjects.map((project, index) => (
-              <div key={project.url}>
+              <div>
                 <a class="project-link" href={project.url}>
                   <div class="project">
                     <div class="project-content">
