@@ -61,7 +61,7 @@ _In-depth stats, for the scores and schedule command:_
 ## Links
 
 - <a href="https://github.com/daniyalmaster693/sportssync" aria-label="Sportssync Github Repository" target="_blank">Github Repository</a>
-- <a href="https://github.com/daniyalmaster693/sportssync" aria-label="Sportssync Raycast Store Page" target="_blank">Raycast Store</a>
+- <a href="https://www.raycast.com/daniyal_master/sportssync" aria-label="Sportssync Raycast Store Page" target="_blank">Raycast Store</a>
 
 ## Tech Stack Used
 
