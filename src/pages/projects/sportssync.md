@@ -3,7 +3,7 @@ layout: ../../layouts/Project Page Layout.astro
 pageTitle: "Sportssync | Daniyal Master"
 title: "Sportssync Raycast Extension"
 description: "View sports scores, news, and standings in Raycast"
-date: "TBD"
+date: "Feb 13th"
 creator: "Daniyal Master"
 order: "0"
 ---
