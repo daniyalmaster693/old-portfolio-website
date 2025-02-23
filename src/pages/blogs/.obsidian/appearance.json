@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "#a78afa",
+  "translucency": true,
+  "interfaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 14,
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono"
+}
