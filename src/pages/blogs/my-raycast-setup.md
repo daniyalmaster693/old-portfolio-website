@@ -6,7 +6,7 @@ pubDate: "2025-02-23"
 readingTime: 7 Min
 ---
 
-<img src="/Raycast 2025-02-23 at 16.33.14.webp" alt="Spotify Restart Screenshot">
+<img src="/Raycast 2025-02-23 at 16.33.14.webp" alt="Raycast Window">
 
 ## Introduction
 
@@ -29,7 +29,7 @@ As a web developer and student, I've found it very useful for many things, and i
 
 ## Extensions
 
-<img src="/Raycast Extensions.webp" alt="Spotify Restart Screenshot">
+<img src="/Raycast Extensions.webp" alt="Raycast Extensions">
 
 The extension store is really where Raycast starts to get more advanced and replace more niche tools. Here are some of my most used extensions:
 

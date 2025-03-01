@@ -194,15 +194,24 @@ const { frontmatter } = Astro.props;
     object-fit: cover;
   }
 
-  .blog-content :global(h2) {
+  .blog-content :global(h2),
+  :global(h3) {
     color: var(--primary-grey);
     font-family: var(--Inter);
-    font-size: 1.35rem;
     font-weight: 500;
     line-height: 1.25rem;
     text-align: left;
     width: 600px;
+  }
+
+  .blog-content :global(h2) {
+    font-size: 1.35rem;
     margin-top: 4rem;
+  }
+
+  .blog-content :global(h3) {
+    font-size: 1.1rem;
+    margin-top: 2rem;
   }
 
   .blog-content :global(p),
