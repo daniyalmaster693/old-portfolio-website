@@ -2,8 +2,8 @@
 layout: ../../layouts/Blog Post Layout.astro
 pageTitle: "My Mac Setup"
 title: "My Mac Setup"
-pubDate: "2025-01-22"
-readingTime: "5 Min"
+pubDate: "2025-02-28"
+readingTime: "7 Min"
 ---
 
 <img src="/Mac Setup.webp" alt="Mac Setup">
