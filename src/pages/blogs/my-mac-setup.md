@@ -80,6 +80,8 @@ Now for some settings:
 
 ## Apps
 
+<img src="/Launchpad Apps.webp" alt="Launchpad Apps">
+
 Coming from Windows, I always loved finding new apps to improve my setup, and streamlining workflows. That's why when I decided to get a Mac, one of the factors I considered was the superior availability of apps, and launcher such as Raycast. Nonetheless, here are the apps I have installed on my Mac:
 
 - Raycast (launcher of choice and much more, checkout my blog post about my Raycast Setup for more information)
@@ -151,6 +153,8 @@ Coming from Windows, I always loved finding new apps to improve my setup, and st
 - Remove all default apps from the dock, and add only apps that you use (assuming you use the dock, and not a launcher)
 
 ### Hot Corners
+
+<img src="/Hot Corners.webp" alt="Launchpad Apps">
 
 - Set up hot corners in Settings > Desktop & Dock > Hot Corners
 - You can add a modifier key to trigger each action by holding down a modifier key while selecting an action

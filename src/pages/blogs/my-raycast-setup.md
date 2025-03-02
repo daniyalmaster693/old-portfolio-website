@@ -73,6 +73,8 @@ The extension store is really where Raycast starts to get more advanced and repl
 
 ## Script Commands
 
+<img src="/Script Commands.webp" alt="Script Commands Window">
+
 I recently got into script commands, and thus far I've created some useful ones:
 
 - Copy Current Page URL (in Safari)
