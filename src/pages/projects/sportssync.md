@@ -8,7 +8,7 @@ creator: "Daniyal Master"
 order: "0"
 ---
 
-<img src="/sportssync 2025-01-12 at 18.05.40.webp" alt="Sportssync Screenshot">
+<img src="/sportssync 2025-03-02 at 12.36.48.webp" alt="Sportssync Screenshot">
 
 ## Overview
 
@@ -22,11 +22,15 @@ Sportssync delivers this solution, bridging the gap between sports and productiv
 
 ## Commands
 
+<img src="/Sportssync Commands.webp" alt="Sportssync Commands Screenshot">
+
 - **Scores and Schedule:** Dynamically view live scores, game times, and completed scores (updates dynamically based on the game state)
 - **Standings Command:** View team standings and in-depth stats (differs based on the league)
 - **News Command:** View news articles and headlines
 
 ## Supported Leagues
+
+<img src="/sportssync 2025-03-02 at 12.41.51.webp" alt="Sportssync News Screenshot">
 
 _Leagues that are fully supported feature the following: a scores and schedule, standings, and news command_
 
@@ -71,6 +75,8 @@ _In-depth stats, for the scores and schedule command:_
 
 ## Challenges and Solutions
 
+<img src="/ESPN API Endpoints.webp" alt="Sportssync Screenshot">
+
 Due to the nature of this project (being open source, and non profit), I couldn't justify paying for a sports API. I decided to do explore the free options available, and I eventually came across a few options. I found a proprietary API for both the MLB and NHL, that were free, and very in depth. The issue that arose was: at the heart of the extension is the leagues, and I wanted to make sure that all major sports leagues are supported.
 
 If I chose to use a proprietary API, I would essentially be creating an extension for only one league, contradicting the goal of this extension. Since I wasn't able to find a free API for many of the other major leagues, which would essentially bring my project to a halt, I looked for more options.
@@ -78,5 +84,7 @@ If I chose to use a proprietary API, I would essentially be creating an extensio
 Thankfully, I came across some well documented ESPN API endpoints that were free, with no limits for requests. Thus, I ended up choosing the ESPN API, it offered a similar JSON response for each league and a simple way to scale out each command for every league.
 
 ## Conclusion
+
+<img src="/sportssync 2025-03-02 at 12.40.00.webp" alt="Sportssync Standings Screenshot">
 
 This project has been an invaluable learning experience. Every challenge and every experience strengthened my problem solving skills and introduced me to new concepts and technologies. Building this project with the goal of real world use and implications, has been incredibly rewarding, and I'm excited iterate further upon this concept in the future, providing an unrivaled sports experience for Raycast.
