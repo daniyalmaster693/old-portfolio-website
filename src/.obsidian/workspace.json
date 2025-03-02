@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "77b6d91f086ca4a4",
+    "id": "8df60005ca8b5eb9",
     "type": "split",
     "children": [
       {
-        "id": "259878edf7818104",
+        "id": "8d31bd19f2b759b5",
         "type": "tabs",
         "children": [
           {
-            "id": "10b1ee15e38c50d2",
+            "id": "a67ca119858186d0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9a52e1d7a086a77e",
+    "id": "2683d75217263e82",
     "type": "split",
     "children": [
       {
-        "id": "fab61f09da1659d5",
+        "id": "9ab92e97d8aeaec1",
         "type": "tabs",
         "children": [
           {
-            "id": "ca646ae2bf3ba1dc",
+            "id": "55a778547c311858",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "2dc5e92ded14dd22",
+            "id": "c48754d21d96a965",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "4ba73ad4c9cf1371",
+            "id": "c88b27bab1a6dd97",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,18 +74,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "4b6ca826bea0ae12",
+    "id": "c8f005bcad3ebcd5",
     "type": "split",
     "children": [
       {
-        "id": "79e597181e5d67a7",
+        "id": "8df38b25a6637d66",
         "type": "tabs",
         "children": [
           {
-            "id": "e72df688921a337b",
+            "id": "383d7eedcd002955",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -103,7 +103,7 @@
             }
           },
           {
-            "id": "d2c16586ed6985f7",
+            "id": "91d9dfb765435ee0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -116,7 +116,7 @@
             }
           },
           {
-            "id": "e0408c54976f47ee",
+            "id": "fa5a28759f54aedd",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +131,7 @@
             }
           },
           {
-            "id": "c77a3b047cc251e9",
+            "id": "7ed3410d56f7d037",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -161,15 +161,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "10b1ee15e38c50d2",
-  "lastOpenFiles": [
-    "my-mac-setup.md",
-    "my-raycast-setup.md",
-    "My Visual Studio Code Setup.md",
-    "Pasted image 20250228184222.png",
-    "2025-01-22.md",
-    "how-i-use-todoist-to-manage-my-life.md",
-    "Untitled.canvas",
-    "creating-my-portfolio-website.md"
-  ]
+  "active": "a67ca119858186d0",
+  "lastOpenFiles": []
 }

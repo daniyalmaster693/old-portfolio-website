@@ -33,34 +33,34 @@ As a web developer and student, I've found it very useful for many things, and i
 
 The extension store is really where Raycast starts to get more advanced and replace more niche tools. Here are some of my most used extensions:
 
-- Add to Dropover
-- Apple Mail
 - Apple Reminders
+- Brew
+- Change Case
+- Coffee
 - Color Picker
 - Count
 - Conjugate (French Verbs)
-- Dictionary
 - Quick Event (Apple Calendar)
-- Temporary Email
-- Easy New File
 - Google Translate
+- IMBd Search
+- Lorem Ipsum
 - Kill Process
 - List Git Repos
 - Lock Keyboard
 - Media Converter
+- Quicktime Time Recording
 - Raindrop.io
 - Screen OCR
+- Screenshot
 - Search Astro Documentation
 - Search Can I Use
 - Search Google Fonts
 - Search Git Commands
 - Search Latex Symbols
 - Search Markdown Syntax
-- Search Palettes
 - Search Raycast Icons
 - Set Audio Device
 - Show Periodic Table
-- Shortcuts Search
 - Spell
 - <a href="../projects/sportssync" aria-label="Sportssync Project Page" target="_blank">Sportssync (made by me!)</a>
 - Spotify Controls
@@ -71,21 +71,27 @@ The extension store is really where Raycast starts to get more advanced and repl
 - Toothpick
 - Vercel
 
-I've found Color Picker and Recognize Text to be really useful while doing web development, especially since they were features found in PowerToys that I used on Windows.
+## Script Commands
 
-Shortcuts Search is useful for learning shortcuts in apps, but I've never really gotten in the habit of using it.
+I recently got into script commands, and thus far I've created some useful ones:
 
-Set Audio Device and Toothpick work great together to manage Bluetooth audio devices.
+- Copy Current Page URL (in Safari)
+- Copy Last Download
+- Create New File in Finder
+- Create a new note in obsidian
+- Custom Window Size (uses a preset window size)
+- IP (lists your ip address and info)
+- Open Current Finder Directory in Terminal
+- Open Current Terminal Directory in Finder
+- Open Last Download
+- Restart Spotify
+- Search Obsidian Vault
+- Bluetooth Headphones Battery Level
+- Toggle Microphone (in Zoom)
 
-Spell, Dictionary, and Count are really useful and work great together while creating blog posts and writing.
+## Quicklinks
 
-I've chosen to use Raytyping over the default typing extension since it doesn't have punctuation, which I find annoying while practicing my typing.
-
-## Quicklinks and Snippets
-
-Quicklinks is probably my most used feature of Raycast. I don't use browser bookmarks, but I really love Quicklinks. Some of my most common uses have been opening course trackers and Google Classrooms, which significantly speeds up my workflow. I also have Quicklinks set up to open things like my portfolio website, Gmail, web docs, and other tools that I use. I've also set up querying for Google Docs, Slides, Drive, YouTube, npm, MDN, etc.
-
-I've never really found text expansion to be useful. I get the appeal of using it for longer pieces of text, but I've never found a use case for me. It feels annoying since I have to remember what I set the trigger to, and most of the time I just have to go and search for the snippet, which just takes longer. However, I have found it useful to store things like mathematical symbols and icons (like the copyright icon) and then later search for them. It's much easier and faster than doing it manually through Google.
+Quicklinks is probably my most used feature of Raycast. I don't use browser bookmarks, but I really love Quicklinks. Some of my most common uses have been opening course trackers and Google Classrooms, which significantly speeds up my workflow. I also have Quicklinks set up to open things like my portfolio website, Gmail, google workspace files, and other tools that I use.
 
 ## Window Management
 
@@ -105,9 +111,25 @@ Raycast is great as a window management system; it has everything you need out o
 - Restore - <b>Cmd + Shift + Down</b>
 - Right Half - <b>Cmd + Shift + Right</b>
 
+## Keyboard Shortcuts and Hyperkey
+
+Raycast recently launched a new feature called Hyperkey, which allows you to set a key as a modifier. I chose caps lock since it's hardly ever used.
+
+### Launching Apps and Commands:
+
+- For Launching apps I use: Hyperkey + First Letter of the App and Hyperkey + Shift + First Letter
+- For my most used commands they follow: Command + Option + First Letter or Command + Shift + First Letter
+
+### Some Other Keyboard Shortcuts:
+
+- Control + Command: Open the ChatGPT Mac App
+- Option + Space: Open the Search Menu Items Command (basically a universal command pallet)
+- Command + 1: Put my mac to sleep (using favorites)
+- Command + 2: Restart Spotify (using favorites)
+
 ## General Tips and Tricks
 
-- Many people already know that you can skip a song in Spotify by closing and reopening the app. However, using Raycast, we can speed this up. Search for the Spotify app, and using the hotkey: <b>Control + Shift + R</b>, you can easily restart the app.
+- Many people already know that you can skip a song in Spotify by closing and reopening the app. However, using Raycast, we can speed this up. Search for the Spotify app, and using the hotkey: <b>Control + Shift + R</b>, you can easily restart the app. (Although it's probably easier to use the dedicated script command, but still useful for other apps).
 
 <img src="/Spotify Restart Screenshot.webp" alt="Spotify Restart Screenshot">
 

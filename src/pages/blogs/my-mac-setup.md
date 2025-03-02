@@ -155,12 +155,13 @@ Coming from Windows, I always loved finding new apps to improve my setup, and st
 - Set up hot corners in Settings > Desktop & Dock > Hot Corners
 - You can add a modifier key to trigger each action by holding down a modifier key while selecting an action
 - Under Desktop & Dock > Disable Tiled windows have margins if you use the default window snapping in Mac OS Sequoia (15)
+- Personally I have one set up to lock my screen if I hold command and drag my cursor to any corner of the display
 
 ### Apple Shortcuts
 
 <img src="/Apple Shortcuts Startup Apps.webp" alt="Apple Shortcut">
 
-- Toggle off all startup apps. Instead create a shortcut to open whatever apps you need, and run it after you login using Spotlight.
+- Toggle off all startup apps. Instead create a shortcut to open whatever apps you need, and run it after you login. This saves system resources and is slightly more inconvenient, a worth it tradeoff imo.
 
 ### Finder
 
