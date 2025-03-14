@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "751d8ef7819f67c6",
+        "id": "7bf55fb9687d1d0e",
         "type": "tabs",
         "children": [
           {
-            "id": "c382ed9debf1f3aa",
+            "id": "6224df6aed567556",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "how-i-use-an-android-phone-with-a-mac.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "how-i-use-an-android-phone-with-a-mac"
+              "title": "New tab"
             }
           }
         ]
@@ -165,11 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c382ed9debf1f3aa",
+  "active": "6224df6aed567556",
   "lastOpenFiles": [
+    "how-i-use-an-android-phone-with-a-mac.md",
     "my-mac-setup.md",
     "2025-01-24.md",
-    "how-i-use-an-android-phone-with-a-mac.md",
     "my-raycast-setup.md",
     "My Visual Studio Code Setup.md",
     "Pasted image 20250228184222.png",
