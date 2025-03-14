@@ -6,9 +6,11 @@ pubDate: "2025-03-07"
 readingTime: "5 Min"
 ---
 
+<img src="/Sportssync Installs.webp" alt="Sportssync Installs">
+
 ## Introduction
 
-First off, thank you all for 200 installs! It's crazy how much support has been shown for this extension since the original version launched and the original post. I've since released a small update, and have a bigger update currently being reviewed (should be approved in the next few days). I've been hard at work, adding new features and improving each command. I'm currently pretty satisfied with the current state of each base command, and am looking forward to adding some new commands and views. Although I will continue to add some new features and improvements with each update.
+First off, thank you all for 250 installs! It's crazy how much support has been shown for this extension since the original version launched and the original post. I've since released a small update, and have a bigger update currently being reviewed (should be approved in the next few days). I've been hard at work, adding new features and improving each command. I'm currently pretty satisfied with the current state of each base command, and am looking forward to adding some new commands and views. Although I will continue to add some new features and improvements with each update.
 
 ## The Highlights:
 
