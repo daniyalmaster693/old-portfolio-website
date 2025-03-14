@@ -27,23 +27,27 @@ New League: Champions League (Soccer)
 
 ## Updated Screenshots:
 
-View of live scores and upcoming games in the NHL Scores and Schedule Command with new icons:
+- View of live scores and upcoming games in the NHL Scores and Schedule Command with new icons:
 
 <img src="/Updated Scores and Schedule Command.webp" alt="Updated Scores and Schedule Command">
 
-Past Scores in the NHL Scores and Schedule Command and New Checkmark Icons:
+- Past Scores in the NHL Scores and Schedule Command and New Checkmark Icons:
 
 <img src="/Past Scores Feature.webp" alt="Sportssync Past Scores Feature">
 
-View of the improved NBA Standings Command with new Position indicators:
+- View of the improved NBA Standings Command with new Position indicators:
 
 <img src="/Updated Standings.webp" alt="Sportssync Past Scores Feature">
 
-Headline Category Indicators for the F1 News Command, and New Calendar Icons:
+- Headline Category Indicators for the F1 News Command, and New Calendar Icons:
 
 <img src="/Updated News.webp" alt="Sportssync Past Scores Feature">
 
-- Preview of the upcoming live scores menu bar command: https://i.imgur.com/wmWQFUM.mp4
+- Preview of the upcoming live scores menu bar command:
+
+<video controls autoplay>
+  <source src="https://i.imgur.com/wmWQFUM.mp4" type="video/mp4">
+</video>
 
 ## Feedback and Upcoming Updates
 

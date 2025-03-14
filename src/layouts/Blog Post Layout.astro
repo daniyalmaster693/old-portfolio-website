@@ -185,13 +185,21 @@ const { frontmatter } = Astro.props;
     flex-wrap: wrap;
   }
 
-  .blog-content :global(img) {
+  .blog-content :global(img),
+  :global(video) {
     width: 600px;
     height: 350px;
     border-radius: 1.2rem;
     margin-bottom: 3rem;
     margin-top: 3rem;
+  }
+
+  .blog-content :global(img) {
     object-fit: cover;
+  }
+
+  .blog-content :global(video) {
+    object-fit: contain;
   }
 
   .blog-content :global(h2),
