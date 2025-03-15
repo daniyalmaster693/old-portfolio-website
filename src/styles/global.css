@@ -80,11 +80,6 @@
   }
 }
 
-:focus {
-  outline: 2px solid var(--purple);
-  border-radius: 5px;
-}
-
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
