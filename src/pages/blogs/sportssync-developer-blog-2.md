@@ -18,7 +18,7 @@ Favorite Team Dashboard Command: Created a new favorite team command to view sch
 
 Tracker Command: This will be replacing most news commands (except f1 and soccer). It will provide three dropdowns to view news articles, injuries, and transactions for each league (college leagues are excluded from injuries and transactions).
 
-Quality of Life Upgrades:
+### Quality of Life Upgrades:
 
 - Dropdown selections now save, and commands will re open to them when relaunched. However this is on a global basis not per command (therefore if you select the second dropdown, that is saved globally). I'm planning to fix this in the next update, although no guarantees.
 - Added country icons to F1 Races
@@ -28,12 +28,12 @@ Quality of Life Upgrades:
 - Added a new copy link action to article views
 - Updated the news view to now show the last 50 articles (except for soccer which will show 20)
 
-Bug Fixes:
+### Bug Fixes:
 
 - Fixed an issue causing a winner to be displayed in the F1 Races and Schedule Command when Qualifying laps have been completed, but races haven't. It will now display a winner once the race has been completed.
 - Added fallbacks to all commands
 
-Other Updates:
+### Other Updates:
 
 - New preferences in the settings (required for favorite team dashboard and live scores menubar)
 - New refreshed icon with new colors
@@ -53,10 +53,6 @@ Other Updates:
 
 ## Updated Feature Previews:
 
-- Scores and Schedule Command with new and context aware actions
-
-<img src="/Sportssync Actions.webp" alt="Updated Context Aware Actions">
-
 - New Preferences Settings
 
 <img src="/Sportssync Commands.webp" alt="Preference Panel Configuration">
@@ -73,7 +69,7 @@ Other Updates:
 
 <img src="/Sportssync-6.webp" alt="Tracker Injuries Preview">
 
-- Tracker Injuries View Preview
+- Tracker Articles View Preview
 
 <img src="/Sportssync-5.webp" alt="Tracker News View">
 
@@ -81,9 +77,11 @@ Other Updates:
 
 <img src="/Sportssync-7.webp" alt="Tracker Transactions View">
 
-## Updated Roadmap:
+- Scores and Schedule Command with new and context aware actions
 
-- <a href="https://www.raycast.com/daniyal_master/sportssync" aria-label="Sportssync Raycast Store Page" target="_blank">Raycast Store</a>
+<img src="/Sportssync Actions.webp" alt="Updated Context Aware Actions">
+
+## Updated Roadmap:
 
 - ~~Live Scores Command (Menubar): View live scores and upcoming games, and click on games to set them as the menu bar title, allowing users to view scores with automatic refreshes.~~
 - ~~Tracker Command: A command to view injuries and transactions~~
