@@ -60,7 +60,7 @@ _Leagues that are fully supported feature the following: a scores and schedule, 
 - Roster View for Standings Command
 - Player Profiles from Roster View
 - Universal Player Search Command
-- Article Viewer from Tracker Command (Read Articles directly in Raycast)
+- Article Viewer for Tracker Command (Read Articles directly in Raycast)
 - Add to Calendar Action for games
 - Current Leagues Planned: UFC, Boxing, WWE, Nascar
 - Additional Leagues: Please request any leagues that you'd like me to add support for, and I'll look into seeing what I can do.
