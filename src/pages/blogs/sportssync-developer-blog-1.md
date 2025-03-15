@@ -2,8 +2,8 @@
 layout: ../../layouts/Blog Post Layout.astro
 pageTitle: "Sportssync Developer Blog #1"
 title: "Sportssync Developer Blog #1"
-pubDate: "2025-03-07"
-readingTime: "5 Min"
+pubDate: "2025-03-04"
+readingTime: 6 Min
 ---
 
 <img src="/Sportssync Installs.webp" alt="Sportssync Installs">
@@ -21,6 +21,7 @@ Visual upgrades: new icons that dynamically update in the scores and schedule co
 MLB Improvements: Now that the season has started (at least spring training) I got a chance to take a look at the api properly, and update and fix some issues. First the standings should display correctly now. Live games will show a detail instead of time remaining (for ex: bottom of 9th).
 
 F1 Improvements: Race titles will now shore more detail, and subtitles have been added for the location of each race
+
 Live Score Menu Bar Command: Not quite ready yet, so will not be shipped in this update. Although I have made some good progress, hopefully will be ready for the next update which will also have the favorite teams feature, and some other improvements.
 
 New League: Champions League (Soccer)

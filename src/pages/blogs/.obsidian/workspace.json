@@ -11,10 +11,28 @@
             "id": "6224df6aed567556",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "sportssync-developer-blog-2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "sportssync-developer-blog-2"
+            }
+          },
+          {
+            "id": "5d3d63f2a2e88504",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sportssync-developer-blog-1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sportssync-developer-blog-1"
             }
           }
         ]
@@ -163,6 +181,8 @@
   },
   "active": "6224df6aed567556",
   "lastOpenFiles": [
+    "sportssync-developer-blog-1.md",
+    "sportssync-developer-blog-2.md",
     "how-i-use-an-android-phone-with-a-mac.md",
     "my-mac-setup.md",
     "2025-01-24.md",
