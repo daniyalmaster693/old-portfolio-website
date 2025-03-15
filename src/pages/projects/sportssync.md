@@ -12,7 +12,7 @@ order: "0"
 
 ## Overview
 
-Sportssync is a raycast extension that keeps you updated with live scores, standings, and news across. With dynamic updates, you can stay in the loop without interrupting your workflow.
+Sportssync is a raycast extension that keeps you updated with live scores, standings, articles, injuries, and transactions across your favorite sports leagues. With dynamic updates, you can stay in the loop without interrupting your workflow.
 
 ## Goals and Motivation
 
@@ -24,37 +24,46 @@ Sportssync delivers this solution, bridging the gap between sports and productiv
 
 <img src="/Sportssync Commands.webp" alt="Sportssync Commands Screenshot">
 
-- **Scores and Schedule:** Dynamically view live scores, game times, and completed scores (updates dynamically based on the game state)
-- **Standings Command:** View team standings and in-depth stats (differs based on the league)
-- **News Command:** View news articles and headlines
+- Scores and Schedule: Dynamically view live scores, game times, and completed scores (updates dynamically based on the game state). Supports scores from the past 3 days, games for the next 5 days, and today's games.
+- Standings Command: View team standings and in-depth stats (differs based on the league)
+- Tracker Command: View articles, injuries, and transactions (differs based on the league).
+- Favorite Team Dashboard: One command to view completed games, scheduled games, team information, team standings position, injuries, transactions, and injuries (differs based on league, also requires a favorite league, sport, and team for setup).
+- Live Scores Menubar: View Live Scores, Game Times, and Completed Scores directly from your menubar. (Requires a favorite league and sport for setup)
 
 ## Supported Leagues
 
-<img src="/Sportssync-2.webp alt="Sportssync Standings Screenshot">
+<img src="/Sportssync-2.webp" alt="Sportssync Standings Screenshot">
 
 _Leagues that are fully supported feature the following: a scores and schedule, standings, and news command_
 
 - NHL (Fully supported)
 - NBA (Fully Supported)
-- WNBA (Fully supported)
+- WNBA (Fully Supported)
 - Men's College Basketball (Only scores and news)
 - Women's College Basketball (Only scores and news)
-- NFL (Fully supported)
+- NFL (Fully Supported)
 - College Football (Men's) - (Only scores and news)
-- MLB (Fully supported)
-- F1 (Fully supported)
-- EPL (English Premier League) - (Fully supported)
-- SLL (LALIGA) - (Fully supported)
-- GER (German Bundesliga) - (Fully supported)
-- ITA (Italian Serie A) - (Fully supported)
+- MLB (Fully Supported)
+- F1 (Only scores, standings and news)
+- EPL (English Premier League) - (Only scores, standings and news)
+- UEFA (Champions League) - (Only scores, standings and news)
+- SLL (LALIGA) - (Only scores, standings and news)
+- GER (German Bundesliga) - (Only scores, standings and news)
+- ITA (Italian Serie A) - (Only scores, standings and news)
 
 ## Roadmap
 
-- **Live Scores Command (Menubar):** View live scores and upcoming games, and click on games to set them as the menu bar title, allowing users to view scores with automatic refreshes.
-- **Stats command:** A command to view player stats.
-- **Tracker Command:** A command to view injuries and transactions.
-- **Past Scores Command:** A separate command (or something integrated into the scores and schedules command) to allow users to view scores for previous games (up to a few days).
-- **Additional Leagues:** Please request any leagues that you'd like me to add support for, and I'll look into seeing what I can do.
+- ~~Live Scores Command (Menubar): View live scores and upcoming games, and click on games to set them as the menu bar title, allowing users to view scores with automatic refreshes.~~
+- ~~Tracker Command: A command to view injuries and transactions~~
+- ~~Past Scores Command: A separate command (or something integrated into the scores and schedules command) to allow users to view scores for previous games (up to a few days)~~
+- ~~Favorite Team Command: A single command to follow a specific team~~
+- Roster View for Standings Command
+- Player Profiles from Roster View
+- Universal Player Search Command
+- Article Viewer from Tracker Command (Read Articles directly in Raycast)
+- Add to Calendar Action for games
+- Current Leagues Planned: UFC, Boxing, WWE, Nascar
+- Additional Leagues: Please request any leagues that you'd like me to add support for, and I'll look into seeing what I can do.
 
 _In-depth stats, for the scores and schedule command:_
 
