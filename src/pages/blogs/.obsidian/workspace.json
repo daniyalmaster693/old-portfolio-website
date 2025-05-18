@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b73b5f015a1544b9",
+            "id": "bf27146a4117e4e1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4b6ca826bea0ae12",
@@ -161,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b73b5f015a1544b9",
+  "active": "bf27146a4117e4e1",
   "lastOpenFiles": [
     "sportssync-developer-blog-1.md",
     "sportssync-developer-blog-2.md",

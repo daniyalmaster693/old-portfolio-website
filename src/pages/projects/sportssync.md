@@ -3,9 +3,9 @@ layout: ../../layouts/Project Page Layout.astro
 pageTitle: "Sportssync | Daniyal Master"
 title: "Sportssync Raycast Extension"
 description: "View sports scores, news, and standings in Raycast"
-date: "Feb 13th"
+date: "2025-02-13"
 creator: "Daniyal Master"
-order: "0"
+order: "1"
 ---
 
 <img src="/Sportssync-1.webp" alt="Sportssync Scores Screenshot">

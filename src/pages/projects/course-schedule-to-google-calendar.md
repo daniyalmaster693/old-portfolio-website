@@ -5,7 +5,7 @@ title: "Course Schedule to Google Calendar"
 description: "Convert your course schedule to Google Calendar"
 date: "TBD"
 creator: "Daniyal Master"
-order: "1"
+order: "2"
 ---
 
 ## Coming Soon...
