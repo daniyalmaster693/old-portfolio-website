@@ -6,6 +6,10 @@
   text-align: left;
   padding: 20px;
   height: 575px;
+  width: 100%;
+  max-width: 643px;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 .available-for-projects,
